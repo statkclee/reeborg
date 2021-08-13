@@ -1,0 +1,9 @@
+fig:nice-fig
+tab:nice-tab
+prerequisites
+intro
+literature
+applications
+example-one
+example-two
+final-words
