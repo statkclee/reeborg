@@ -1,6 +1,13 @@
-book_filename: "bookdown-demo"
+book_filename: "reeborg"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: ""
 delete_merged_file: true
+rmd_files: [
+  "index.Rmd",
+  "01-home.Rmd",
+  "02-around.Rmd",
+  "03-center.Rmd"]
+new_session: 'yes'
 output_dir: docs
+

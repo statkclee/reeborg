@@ -1,0 +1,30 @@
+# 중심 (center) {#center}
+
+## Center 1 {#center-01}
+
+::: {.row}
+::: {.col-md-6}
+### 실행결과
+
+```{r center-01-gif, out.width="70%", fig.align='center', eval = FALSE}
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+  knitr::include_graphics("fig/center_01.gif")
+}
+```
+:::
+
+::: {.col-md-6}
+### 코드
+
+```{r center-01, echo = TRUE, eval = FALSE}
+repeat 4 :
+    repeat 9 :
+        move()
+    turn_left()
+
+```
+:::
+:::
+
