@@ -110,11 +110,63 @@
 <h2>
 <span class="header-section-number">2.3</span> Around 3<a class="anchor" aria-label="anchor" href="#around-03"><i class="fas fa-link"></i></a>
 </h2>
+<div class="row">
+<div id="실행결과-7" class="section level3 col-md-6" number="2.3.1">
+<h3>
+<span class="header-section-number">2.3.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-7"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="fig/Around_03.gif" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="코드-7" class="section level3 col-md-6" number="2.3.2">
+<h3>
+<span class="header-section-number">2.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-7"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="around.html#cb8-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
+<span id="cb8-2"><a href="around.html#cb8-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb8-3"><a href="around.html#cb8-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb8-4"><a href="around.html#cb8-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb8-5"><a href="around.html#cb8-5" aria-hidden="true"></a></span>
+<span id="cb8-6"><a href="around.html#cb8-6" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">46</span><span class="op">:</span></span>
+<span id="cb8-7"><a href="around.html#cb8-7" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
+<span id="cb8-8"><a href="around.html#cb8-8" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span>
+<span id="cb8-9"><a href="around.html#cb8-9" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
+<span id="cb8-10"><a href="around.html#cb8-10" aria-hidden="true"></a>    elif <span class="kw">front_is_clear</span>()<span class="op">:</span></span>
+<span id="cb8-11"><a href="around.html#cb8-11" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb8-12"><a href="around.html#cb8-12" aria-hidden="true"></a>    <span class="cf">else</span><span class="op">:</span></span>
+<span id="cb8-13"><a href="around.html#cb8-13" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span></code></pre></div>
+</div>
+</div>
 </div>
 <div id="around-04" class="section level2" number="2.4">
 <h2>
 <span class="header-section-number">2.4</span> Around 4<a class="anchor" aria-label="anchor" href="#around-04"><i class="fas fa-link"></i></a>
 </h2>
+<div class="row">
+<div id="실행결과-8" class="section level3 col-md-6" number="2.4.1">
+<h3>
+<span class="header-section-number">2.4.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-8"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="fig/Around_04.gif" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="코드-8" class="section level3 col-md-6" number="2.4.2">
+<h3>
+<span class="header-section-number">2.4.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-8"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="around.html#cb9-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
+<span id="cb9-2"><a href="around.html#cb9-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb9-3"><a href="around.html#cb9-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb9-4"><a href="around.html#cb9-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb9-5"><a href="around.html#cb9-5" aria-hidden="true"></a></span>
+<span id="cb9-6"><a href="around.html#cb9-6" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">50</span><span class="op">:</span></span>
+<span id="cb9-7"><a href="around.html#cb9-7" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
+<span id="cb9-8"><a href="around.html#cb9-8" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span>
+<span id="cb9-9"><a href="around.html#cb9-9" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
+<span id="cb9-10"><a href="around.html#cb9-10" aria-hidden="true"></a>    elif <span class="kw">front_is_clear</span>()<span class="op">:</span></span>
+<span id="cb9-11"><a href="around.html#cb9-11" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb9-12"><a href="around.html#cb9-12" aria-hidden="true"></a>    <span class="cf">else</span><span class="op">:</span></span>
+<span id="cb9-13"><a href="around.html#cb9-13" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span></code></pre></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -137,8 +189,18 @@
 <li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-6"><span class="header-section-number">2.2.2</span> 코드</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#around-03"><span class="header-section-number">2.3</span> Around 3</a></li>
-<li><a class="nav-link" href="#around-04"><span class="header-section-number">2.4</span> Around 4</a></li>
+<li>
+<a class="nav-link" href="#around-03"><span class="header-section-number">2.3</span> Around 3</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-7"><span class="header-section-number">2.3.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-7"><span class="header-section-number">2.3.2</span> 코드</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#around-04"><span class="header-section-number">2.4</span> Around 4</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-8"><span class="header-section-number">2.4.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-8"><span class="header-section-number">2.4.2</span> 코드</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">

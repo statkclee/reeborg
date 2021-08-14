@@ -22,8 +22,12 @@ around-02
 실행결과-6
 코드-6
 around-03
-around-04
-center
-center-01
 실행결과-7
 코드-7
+around-04
+실행결과-8
+코드-8
+center
+center-01
+실행결과-9
+코드-9

@@ -66,5 +66,74 @@ while front_is_clear() :
 
 ## Around 3 {#around-03}
 
+::: {.row}
+::: {.col-md-6}
+### 실행결과
+
+```{r around-03-gif, out.width="70%", fig.align='center'}
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+  knitr::include_graphics("fig/Around_03.gif")
+}
+```
+:::
+
+::: {.col-md-6}
+### 코드
+
+```{r around-03, echo = TRUE, eval = FALSE}
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+repeat 46:
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+```
+:::
+:::
+
+
 ## Around 4 {#around-04}
 
+
+::: {.row}
+::: {.col-md-6}
+### 실행결과
+
+```{r around-04-gif, out.width="70%", fig.align='center'}
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+  knitr::include_graphics("fig/Around_04.gif")
+}
+```
+:::
+
+::: {.col-md-6}
+### 코드
+
+```{r around-04, echo = TRUE, eval = FALSE}
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+repeat 50:
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+```
+:::
+:::
