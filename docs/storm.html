@@ -113,6 +113,103 @@
 <span id="cb29-22"><a href="storm.html#cb29-22" aria-hidden="true"></a>    toss() </span></code></pre></div>
 </div>
 </div>
+</div>
+<div id="storm-02" class="section level2" number="10.2">
+<h2>
+<span class="header-section-number">10.2</span> 낙엽 청소 2<a class="anchor" aria-label="anchor" href="#storm-02"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Storm%201&amp;url=worlds%2Ftutorial_en%2Fstorm1.json">문제 바로가기</a></li>
+<li>선행 지식
+<ul>
+<li>기본 함수 : <code>move()</code>, <code>turn_left()</code>, <code>take()</code>, <code>toss()</code>
+</li>
+<li>테스트 조건: <code>object_here()</code>, <code>carries_object()</code>, <code>front_is_clear()</code>, <code>wall_in_front()</code>
+</li>
+<li>반복 <code>while</code>문과 제어 조건 <code>if</code> 문을 사용</li>
+</ul>
+</li>
+<li>난이도: 4</li>
+</ul>
+<div class="row">
+<div id="실행결과-29" class="section level3 col-md-6" number="10.2.1">
+<h3>
+<span class="header-section-number">10.2.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-29"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="fig/Storm_02.gif" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="코드-29" class="section level3 col-md-6" number="10.2.2">
+<h3>
+<span class="header-section-number">10.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-29"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="storm.html#cb30-1" aria-hidden="true"></a><span class="kw">def</span> turn_around():</span>
+<span id="cb30-2"><a href="storm.html#cb30-2" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-3"><a href="storm.html#cb30-3" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-4"><a href="storm.html#cb30-4" aria-hidden="true"></a></span>
+<span id="cb30-5"><a href="storm.html#cb30-5" aria-hidden="true"></a><span class="kw">def</span> turn_right():</span>
+<span id="cb30-6"><a href="storm.html#cb30-6" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-7"><a href="storm.html#cb30-7" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-8"><a href="storm.html#cb30-8" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-9"><a href="storm.html#cb30-9" aria-hidden="true"></a></span>
+<span id="cb30-10"><a href="storm.html#cb30-10" aria-hidden="true"></a><span class="kw">def</span> collect_leaves():</span>
+<span id="cb30-11"><a href="storm.html#cb30-11" aria-hidden="true"></a>    <span class="cf">while</span> front_is_clear():</span>
+<span id="cb30-12"><a href="storm.html#cb30-12" aria-hidden="true"></a>        <span class="cf">while</span> object_here():</span>
+<span id="cb30-13"><a href="storm.html#cb30-13" aria-hidden="true"></a>            take()</span>
+<span id="cb30-14"><a href="storm.html#cb30-14" aria-hidden="true"></a>        move()</span>
+<span id="cb30-15"><a href="storm.html#cb30-15" aria-hidden="true"></a>        </span>
+<span id="cb30-16"><a href="storm.html#cb30-16" aria-hidden="true"></a><span class="kw">def</span> first_collect_leaves():</span>
+<span id="cb30-17"><a href="storm.html#cb30-17" aria-hidden="true"></a>    <span class="cf">while</span> front_is_clear():</span>
+<span id="cb30-18"><a href="storm.html#cb30-18" aria-hidden="true"></a>        <span class="cf">while</span> object_here():</span>
+<span id="cb30-19"><a href="storm.html#cb30-19" aria-hidden="true"></a>            take()</span>
+<span id="cb30-20"><a href="storm.html#cb30-20" aria-hidden="true"></a>        move()            </span>
+<span id="cb30-21"><a href="storm.html#cb30-21" aria-hidden="true"></a>    turn_around()</span>
+<span id="cb30-22"><a href="storm.html#cb30-22" aria-hidden="true"></a>    repeat <span class="dv">4</span>:</span>
+<span id="cb30-23"><a href="storm.html#cb30-23" aria-hidden="true"></a>        move()</span>
+<span id="cb30-24"><a href="storm.html#cb30-24" aria-hidden="true"></a>    turn_right()</span>
+<span id="cb30-25"><a href="storm.html#cb30-25" aria-hidden="true"></a>    move()</span>
+<span id="cb30-26"><a href="storm.html#cb30-26" aria-hidden="true"></a>    turn_right()</span>
+<span id="cb30-27"><a href="storm.html#cb30-27" aria-hidden="true"></a>    collect_leaves()</span>
+<span id="cb30-28"><a href="storm.html#cb30-28" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-29"><a href="storm.html#cb30-29" aria-hidden="true"></a>    move()</span>
+<span id="cb30-30"><a href="storm.html#cb30-30" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-31"><a href="storm.html#cb30-31" aria-hidden="true"></a>            </span>
+<span id="cb30-32"><a href="storm.html#cb30-32" aria-hidden="true"></a><span class="kw">def</span> go_to_beginning():</span>
+<span id="cb30-33"><a href="storm.html#cb30-33" aria-hidden="true"></a>    <span class="cf">while</span> object_here():</span>
+<span id="cb30-34"><a href="storm.html#cb30-34" aria-hidden="true"></a>        take()    </span>
+<span id="cb30-35"><a href="storm.html#cb30-35" aria-hidden="true"></a>    turn_around()</span>
+<span id="cb30-36"><a href="storm.html#cb30-36" aria-hidden="true"></a>    <span class="cf">while</span> <span class="kw">not</span> wall_in_front():</span>
+<span id="cb30-37"><a href="storm.html#cb30-37" aria-hidden="true"></a>        move()</span>
+<span id="cb30-38"><a href="storm.html#cb30-38" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-39"><a href="storm.html#cb30-39" aria-hidden="true"></a>    move()</span>
+<span id="cb30-40"><a href="storm.html#cb30-40" aria-hidden="true"></a>    turn_left()    </span>
+<span id="cb30-41"><a href="storm.html#cb30-41" aria-hidden="true"></a></span>
+<span id="cb30-42"><a href="storm.html#cb30-42" aria-hidden="true"></a><span class="kw">def</span> go_to_home():</span>
+<span id="cb30-43"><a href="storm.html#cb30-43" aria-hidden="true"></a>    <span class="cf">while</span> <span class="kw">not</span> wall_in_front():</span>
+<span id="cb30-44"><a href="storm.html#cb30-44" aria-hidden="true"></a>        move()</span>
+<span id="cb30-45"><a href="storm.html#cb30-45" aria-hidden="true"></a>        <span class="cf">while</span> object_here():</span>
+<span id="cb30-46"><a href="storm.html#cb30-46" aria-hidden="true"></a>            take()</span>
+<span id="cb30-47"><a href="storm.html#cb30-47" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb30-48"><a href="storm.html#cb30-48" aria-hidden="true"></a>    <span class="cf">while</span> <span class="kw">not</span> at_goal():</span>
+<span id="cb30-49"><a href="storm.html#cb30-49" aria-hidden="true"></a>        <span class="cf">if</span> front_is_clear():</span>
+<span id="cb30-50"><a href="storm.html#cb30-50" aria-hidden="true"></a>            move()</span>
+<span id="cb30-51"><a href="storm.html#cb30-51" aria-hidden="true"></a>        <span class="cf">elif</span> right_is_clear():</span>
+<span id="cb30-52"><a href="storm.html#cb30-52" aria-hidden="true"></a>            turn_right()</span>
+<span id="cb30-53"><a href="storm.html#cb30-53" aria-hidden="true"></a>        <span class="cf">elif</span> wall_in_front():</span>
+<span id="cb30-54"><a href="storm.html#cb30-54" aria-hidden="true"></a>           turn_left()</span>
+<span id="cb30-55"><a href="storm.html#cb30-55" aria-hidden="true"></a>    turn_right()</span>
+<span id="cb30-56"><a href="storm.html#cb30-56" aria-hidden="true"></a>    <span class="cf">while</span> carries_object():</span>
+<span id="cb30-57"><a href="storm.html#cb30-57" aria-hidden="true"></a>        toss()</span>
+<span id="cb30-58"><a href="storm.html#cb30-58" aria-hidden="true"></a>        </span>
+<span id="cb30-59"><a href="storm.html#cb30-59" aria-hidden="true"></a>move()    </span>
+<span id="cb30-60"><a href="storm.html#cb30-60" aria-hidden="true"></a>first_collect_leaves()</span>
+<span id="cb30-61"><a href="storm.html#cb30-61" aria-hidden="true"></a>repeat <span class="dv">3</span>:</span>
+<span id="cb30-62"><a href="storm.html#cb30-62" aria-hidden="true"></a>    collect_leaves()</span>
+<span id="cb30-63"><a href="storm.html#cb30-63" aria-hidden="true"></a>    go_to_beginning()</span>
+<span id="cb30-64"><a href="storm.html#cb30-64" aria-hidden="true"></a></span>
+<span id="cb30-65"><a href="storm.html#cb30-65" aria-hidden="true"></a></span>
+<span id="cb30-66"><a href="storm.html#cb30-66" aria-hidden="true"></a>go_to_home()</span></code></pre></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -127,6 +224,12 @@
 <a class="nav-link" href="#storm-01"><span class="header-section-number">10.1</span> 낙엽 청소 1</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-28"><span class="header-section-number">10.1.1</span> 실행결과</a></li>
 <li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-28"><span class="header-section-number">10.1.2</span> 코드</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#storm-02"><span class="header-section-number">10.2</span> 낙엽 청소 2</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-29"><span class="header-section-number">10.2.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-29"><span class="header-section-number">10.2.2</span> 코드</a></li>
 </ul>
 </li>
 </ul>
