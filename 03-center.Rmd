@@ -1,16 +1,23 @@
 # 중심 (center) {#center}
 
-## Center 1 {#center-01}
+## 중심 찾기 1 {#center-01}
+
+- [문제 바로가기](https://reeborg.ca/reeborg.html?lang=ko-en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Center%201&url=worlds%2Ftutorial_en%2Fcenter1.json)
+- 선행 지식
+    - 기본 함수 : `move()`, `turn_left()`, `put()`
+    - 테스트 조건: `front_is_clear()`, `wall_in_front()`, `object_here()`
+    - 반복 및 제어: `while` 루프, `if` 문
+    - 난이도: 5
 
 ::: {.row}
 ::: {.col-md-6}
 ### 실행결과
 
-```{r center-01-gif, out.width="70%", fig.align='center', eval = FALSE}
+```{r center-01-gif, out.width="70%", fig.align='center'}
 if (knitr:::is_latex_output()) {
   knitr::asis_output('\\url{....}')
 } else {
-  knitr::include_graphics("fig/center_01.gif")
+  knitr::include_graphics("fig/Center_01.gif")
 }
 ```
 :::
@@ -19,12 +26,59 @@ if (knitr:::is_latex_output()) {
 ### 코드
 
 ```{r center-01, echo = TRUE, eval = FALSE}
-repeat 4 :
-    repeat 9 :
-        move()
+def turn_around():
     turn_left()
+    turn_left()
+    
+# 환경설정 ------------------    
+def put_tokens():
+    ## 토큰 양 끝에 두기 ----
+    put()
+    while front_is_clear():
+        move()
+    put()
+    ## 제자리 돌아오기 -----
+    turn_around()
+    while front_is_clear():
+        move()
+    turn_around()
+    
+put_tokens()    
+
+# 토큰 이동 ------------------    
+
+def pick_and_put():    
+    take()
+    move()
+    put()
+    move()
+
+def move_left_to_right():
+    if object_here():
+        pick_and_put()
+        while not object_here():
+            move()
+
+def move_right_to_left():
+    turn_around()
+    if object_here():
+        pick_and_put()
+        while not object_here():
+            move()
+
+def move_left_right_tokens() :
+    move_left_to_right()
+    move_right_to_left()           
+    turn_around()
+
+  
+move_left_right_tokens()
+move_left_right_tokens()
+move_left_right_tokens()
+move_left_right_tokens()
 
 ```
 :::
 :::
+
 
