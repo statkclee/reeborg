@@ -10,7 +10,11 @@ rmd_files: [
   "03-center.Rmd",
   "04-harvest.Rmd",
   "05-hurdle.Rmd",
-  "06-rain.Rmd"]
+  "06-rain.Rmd",
+  "07-token.Rmd",
+  "08-newspaper.Rmd",
+  "09-maze.Rmd",
+  "10-storm.Rmd"]
 new_session: 'yes'
 output_dir: docs
 

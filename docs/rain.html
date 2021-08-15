@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>6 비바람 창문 닫기 | 리보그 세상(Reeborg’s World)</title>
+<title>7 토큰 | 리보그 세상(Reeborg’s World)</title>
 <meta name="author" content="ANDRÉ ROBERGE, 이광춘 (번역)">
-<meta name="description" content="6.1 창문 닫기 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), build_wall()  난이도: 1 참고: 러플 - 비가 와요   6.1.1 실행결과   6.1.2 코드 def turn_around():   turn_left()     turn_left() def close_window():   repeat 6: ...">
+<meta name="description" content="7.1 토큰 이동 1 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1  7.1.1 실행결과   7.1.2 코드 move() take() move() put() move()   7.2 토큰 이동 2 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1...">
 <meta name="generator" content="bookdown 0.23.1 with bs4_book()">
-<meta property="og:title" content="6 비바람 창문 닫기 | 리보그 세상(Reeborg’s World)">
+<meta property="og:title" content="7 토큰 | 리보그 세상(Reeborg’s World)">
 <meta property="og:type" content="book">
-<meta property="og:description" content="6.1 창문 닫기 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), build_wall()  난이도: 1 참고: 러플 - 비가 와요   6.1.1 실행결과   6.1.2 코드 def turn_around():   turn_left()     turn_left() def close_window():   repeat 6: ...">
+<meta property="og:description" content="7.1 토큰 이동 1 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1  7.1.1 실행결과   7.1.2 코드 move() take() move() put() move()   7.2 토큰 이동 2 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="6 비바람 창문 닫기 | 리보그 세상(Reeborg’s World)">
-<meta name="twitter:description" content="6.1 창문 닫기 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), build_wall()  난이도: 1 참고: 러플 - 비가 와요   6.1.1 실행결과   6.1.2 코드 def turn_around():   turn_left()     turn_left() def close_window():   repeat 6: ...">
+<meta name="twitter:title" content="7 토큰 | 리보그 세상(Reeborg’s World)">
+<meta name="twitter:description" content="7.1 토큰 이동 1 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1  7.1.1 실행결과   7.1.2 코드 move() take() move() put() move()   7.2 토큰 이동 2 문제 바로가기 선행 지식 기본 함수 : move(), put(), take()  난이도: 1...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.9002/transition.js"></script><script src="libs/bs3compat-0.2.5.9002/tabs.js"></script><script src="libs/bs3compat-0.2.5.9002/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -45,7 +45,11 @@
 <li><a class="" href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></li>
 <li><a class="" href="harvest.html"><span class="header-section-number">4</span> 추수 (Harvest)</a></li>
 <li><a class="" href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></li>
-<li><a class="active" href="rain.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
+<li><a class="" href="rains.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
+<li><a class="active" href="rain.html"><span class="header-section-number">7</span> 토큰</a></li>
+<li><a class="" href="newspaper.html"><span class="header-section-number">8</span> 신문배달</a></li>
+<li><a class="" href="maze.html"><span class="header-section-number">9</span> 미로 탈출</a></li>
+<li><a class="" href="storm.html"><span class="header-section-number">10</span> 폭풍 후에 …</a></li>
 </ul>
 
         <div class="book-extra">
@@ -53,207 +57,256 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="rain" class="section level1" number="6">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="rain" class="section level1" number="7">
 <h1>
-<span class="header-section-number">6</span> 비바람 창문 닫기<a class="anchor" aria-label="anchor" href="#rain"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7</span> 토큰<a class="anchor" aria-label="anchor" href="#rain"><i class="fas fa-link"></i></a>
 </h1>
-<div id="rain-01" class="section level2" number="6.1">
+<div id="token-01" class="section level2" number="7.1">
 <h2>
-<span class="header-section-number">6.1</span> 창문 닫기 1<a class="anchor" aria-label="anchor" href="#rain-01"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.1</span> 토큰 이동 1<a class="anchor" aria-label="anchor" href="#token-01"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
-<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Rain%200&amp;url=worlds%2Ftutorial_en%2Frain0.json">문제 바로가기</a></li>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Tokens%201&amp;url=worlds%2Ftutorial_en%2Ftokens1.json">문제 바로가기</a></li>
 <li>선행 지식
 <ul>
-<li>기본 함수 : <code>move()</code>, <code>turn_left()</code>, <code>build_wall()</code>
+<li>기본 함수 : <code>move()</code>, <code>put()</code>, <code>take()</code>
 </li>
 </ul>
 </li>
 <li>난이도: 1</li>
-<li>참고: <a href="http://statkclee.github.io/rur-ple/intro/22-rain.htm">러플 - 비가 와요</a>
-</li>
 </ul>
 <div class="row">
-<div id="실행결과-15" class="section level3 col-md-6" number="6.1.1">
+<div id="실행결과-18" class="section level3 col-md-6" number="7.1.1">
 <h3>
-<span class="header-section-number">6.1.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-15"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.1.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-18"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-figure"><img src="fig/Rain_01.gif" width="70%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="fig/Token_01.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-15" class="section level3 col-md-6" number="6.1.2">
+<div id="코드-18" class="section level3 col-md-6" number="7.1.2">
 <h3>
-<span class="header-section-number">6.1.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-15"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.1.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-18"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="rain.html#cb16-1" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
-<span id="cb16-2"><a href="rain.html#cb16-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()    </span>
-<span id="cb16-3"><a href="rain.html#cb16-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb16-4"><a href="rain.html#cb16-4" aria-hidden="true"></a></span>
-<span id="cb16-5"><a href="rain.html#cb16-5" aria-hidden="true"></a>def <span class="kw">close_window</span>()<span class="op">:</span></span>
-<span id="cb16-6"><a href="rain.html#cb16-6" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb16-7"><a href="rain.html#cb16-7" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb16-8"><a href="rain.html#cb16-8" aria-hidden="true"></a>    <span class="kw">build_wall</span>()    </span>
-<span id="cb16-9"><a href="rain.html#cb16-9" aria-hidden="true"></a></span>
-<span id="cb16-10"><a href="rain.html#cb16-10" aria-hidden="true"></a>def <span class="kw">go_to_home</span>()<span class="op">:</span></span>
-<span id="cb16-11"><a href="rain.html#cb16-11" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()    </span>
-<span id="cb16-12"><a href="rain.html#cb16-12" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">5</span><span class="op">:</span></span>
-<span id="cb16-13"><a href="rain.html#cb16-13" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb16-14"><a href="rain.html#cb16-14" aria-hidden="true"></a></span>
-<span id="cb16-15"><a href="rain.html#cb16-15" aria-hidden="true"></a><span class="kw">close_window</span>()        </span>
-<span id="cb16-16"><a href="rain.html#cb16-16" aria-hidden="true"></a><span class="kw">go_to_home</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="rain.html#cb19-1" aria-hidden="true"></a>move()</span>
+<span id="cb19-2"><a href="rain.html#cb19-2" aria-hidden="true"></a>take()</span>
+<span id="cb19-3"><a href="rain.html#cb19-3" aria-hidden="true"></a>move()</span>
+<span id="cb19-4"><a href="rain.html#cb19-4" aria-hidden="true"></a>put()</span>
+<span id="cb19-5"><a href="rain.html#cb19-5" aria-hidden="true"></a>move()</span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="rain-02" class="section level2" number="6.2">
+<div id="token-02" class="section level2" number="7.2">
 <h2>
-<span class="header-section-number">6.2</span> 창문 닫기 2<a class="anchor" aria-label="anchor" href="#rain-02"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2</span> 토큰 이동 2<a class="anchor" aria-label="anchor" href="#token-02"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
-<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Rain%201&amp;url=worlds%2Ftutorial_en%2Frain1.json">문제 바로가기</a></li>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Tokens%202&amp;url=worlds%2Ftutorial_en%2Ftokens2.json">문제 바로가기</a></li>
 <li>선행 지식
 <ul>
-<li>기본 함수 : <code>move()</code>, <code>turn_left()</code>, <code>build_wall()</code>
+<li>기본 함수 : <code>move()</code>, <code>put()</code>, <code>take()</code>
 </li>
-<li>테스트 조건: <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>at_goal()</code>
+</ul>
 </li>
-<li>반복 및 제어: <code>while</code> 루프, <code>if</code> 문</li>
+<li>난이도: 1</li>
+<li>
+<code>move_until_done()</code> 함수를 제작해서 <code>if</code>문을 사용하게 되면 조금더 깔끔하게 목적을 달성할 수 있다.</li>
+</ul>
+<div class="row">
+<div id="실행결과-19" class="section level3 col-md-6" number="7.2.1">
+<h3>
+<span class="header-section-number">7.2.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-19"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="fig/Token_02.gif" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="코드-19" class="section level3 col-md-6" number="7.2.2">
+<h3>
+<span class="header-section-number">7.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-19"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="rain.html#cb20-1" aria-hidden="true"></a><span class="kw">def</span> move_until_done():</span>
+<span id="cb20-2"><a href="rain.html#cb20-2" aria-hidden="true"></a>    move()</span>
+<span id="cb20-3"><a href="rain.html#cb20-3" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb20-4"><a href="rain.html#cb20-4" aria-hidden="true"></a>        take()</span>
+<span id="cb20-5"><a href="rain.html#cb20-5" aria-hidden="true"></a>        move()</span>
+<span id="cb20-6"><a href="rain.html#cb20-6" aria-hidden="true"></a>        put()</span>
+<span id="cb20-7"><a href="rain.html#cb20-7" aria-hidden="true"></a>        </span>
+<span id="cb20-8"><a href="rain.html#cb20-8" aria-hidden="true"></a>repeat <span class="dv">5</span>:</span>
+<span id="cb20-9"><a href="rain.html#cb20-9" aria-hidden="true"></a>    move_until_done()</span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="token-03" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> 토큰 이동 3<a class="anchor" aria-label="anchor" href="#token-03"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Tokens%203&amp;url=worlds%2Ftutorial_en%2Ftokens3.json">문제 바로가기</a></li>
+<li>선행 지식
+<ul>
+<li>기본 함수 : <code>move()</code>, <code>put()</code>, <code>take()</code>
+</li>
+<li>테스트 조건: <code>object_here()</code>, <code>at_goal()</code>
+</li>
+<li>반복과 제어조건: <code>while</code> 루프와 부정(negation)</li>
+</ul>
+</li>
+<li>난이도: 3</li>
+</ul>
+<div class="row">
+<div id="실행결과-20" class="section level3 col-md-6" number="7.3.1">
+<h3>
+<span class="header-section-number">7.3.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-20"><i class="fas fa-link"></i></a>
+</h3>
+<div class="inline-figure"><img src="fig/Token_03.gif" width="70%" style="display: block; margin: auto;"></div>
+</div>
+<div id="코드-20" class="section level3 col-md-6" number="7.3.2">
+<h3>
+<span class="header-section-number">7.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-20"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="rain.html#cb21-1" aria-hidden="true"></a><span class="kw">def</span> move_until_done():</span>
+<span id="cb21-2"><a href="rain.html#cb21-2" aria-hidden="true"></a>    move()</span>
+<span id="cb21-3"><a href="rain.html#cb21-3" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb21-4"><a href="rain.html#cb21-4" aria-hidden="true"></a>        take()</span>
+<span id="cb21-5"><a href="rain.html#cb21-5" aria-hidden="true"></a>        move()</span>
+<span id="cb21-6"><a href="rain.html#cb21-6" aria-hidden="true"></a>        put()</span>
+<span id="cb21-7"><a href="rain.html#cb21-7" aria-hidden="true"></a>        </span>
+<span id="cb21-8"><a href="rain.html#cb21-8" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> at_goal():</span>
+<span id="cb21-9"><a href="rain.html#cb21-9" aria-hidden="true"></a>    move_until_done()</span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="token-04" class="section level2" number="7.4">
+<h2>
+<span class="header-section-number">7.4</span> 토큰 이동 4<a class="anchor" aria-label="anchor" href="#token-04"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Tokens%204&amp;url=worlds%2Ftutorial_en%2Ftokens4.json">문제 바로가기</a></li>
+<li>선행 지식
+<ul>
+<li>기본 함수 : <code>move()</code>, <code>put()</code>, <code>take()</code>
+</li>
+<li>테스트 조건: <code>object_here()</code>, <code>carries_object()</code>, <code>at_goal()</code>
+</li>
+<li>반복과 제어조건: <code>while</code> 루프, <code>if</code> 문과 부정(negation)</li>
 </ul>
 </li>
 <li>난이도: 5</li>
-<li>참고: <a href="http://statkclee.github.io/rur-ple/intro/22-rain.htm">러플 - 비가 와요</a>
-</li>
 </ul>
 <div class="row">
-<div id="실행결과-16" class="section level3 col-md-6" number="6.2.1">
+<div id="실행결과-21" class="section level3 col-md-6" number="7.4.1">
 <h3>
-<span class="header-section-number">6.2.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-16"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.4.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-21"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-figure"><img src="fig/Rain_02.gif" width="70%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="fig/Token_04.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-16" class="section level3 col-md-6" number="6.2.2">
+<div id="코드-21" class="section level3 col-md-6" number="7.4.2">
 <h3>
-<span class="header-section-number">6.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-16"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.4.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-21"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="rain.html#cb17-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb17-2"><a href="rain.html#cb17-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb17-3"><a href="rain.html#cb17-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb17-4"><a href="rain.html#cb17-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb17-5"><a href="rain.html#cb17-5" aria-hidden="true"></a></span>
-<span id="cb17-6"><a href="rain.html#cb17-6" aria-hidden="true"></a>    </span>
-<span id="cb17-7"><a href="rain.html#cb17-7" aria-hidden="true"></a>def <span class="kw">move_to_goal</span>()<span class="op">:</span></span>
-<span id="cb17-8"><a href="rain.html#cb17-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
-<span id="cb17-9"><a href="rain.html#cb17-9" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb17-10"><a href="rain.html#cb17-10" aria-hidden="true"></a></span>
-<span id="cb17-11"><a href="rain.html#cb17-11" aria-hidden="true"></a><span class="kw">move_to_goal</span>()</span>
-<span id="cb17-12"><a href="rain.html#cb17-12" aria-hidden="true"></a><span class="kw">move</span>() </span>
-<span id="cb17-13"><a href="rain.html#cb17-13" aria-hidden="true"></a></span>
-<span id="cb17-14"><a href="rain.html#cb17-14" aria-hidden="true"></a><span class="cf">while</span> not <span class="kw">at_goal</span>()<span class="op">:</span></span>
-<span id="cb17-15"><a href="rain.html#cb17-15" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">front_is_clear</span>()<span class="op">:</span></span>
-<span id="cb17-16"><a href="rain.html#cb17-16" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb17-17"><a href="rain.html#cb17-17" aria-hidden="true"></a>    <span class="cf">if</span> <span class="kw">wall_in_front</span>()<span class="op">:</span></span>
-<span id="cb17-18"><a href="rain.html#cb17-18" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span>
-<span id="cb17-19"><a href="rain.html#cb17-19" aria-hidden="true"></a>    <span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
-<span id="cb17-20"><a href="rain.html#cb17-20" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span>
-<span id="cb17-21"><a href="rain.html#cb17-21" aria-hidden="true"></a>        <span class="kw">build_wall</span>()</span>
-<span id="cb17-22"><a href="rain.html#cb17-22" aria-hidden="true"></a>        <span class="kw">turn_left</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="rain.html#cb22-1" aria-hidden="true"></a><span class="kw">def</span> collect_all():</span>
+<span id="cb22-2"><a href="rain.html#cb22-2" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb22-3"><a href="rain.html#cb22-3" aria-hidden="true"></a>        take()</span>
+<span id="cb22-4"><a href="rain.html#cb22-4" aria-hidden="true"></a>    move()</span>
+<span id="cb22-5"><a href="rain.html#cb22-5" aria-hidden="true"></a></span>
+<span id="cb22-6"><a href="rain.html#cb22-6" aria-hidden="true"></a><span class="kw">def</span> put_down_all_and_move():</span>
+<span id="cb22-7"><a href="rain.html#cb22-7" aria-hidden="true"></a>    <span class="cf">while</span> carries_object():</span>
+<span id="cb22-8"><a href="rain.html#cb22-8" aria-hidden="true"></a>        put()</span>
+<span id="cb22-9"><a href="rain.html#cb22-9" aria-hidden="true"></a>    move()</span>
+<span id="cb22-10"><a href="rain.html#cb22-10" aria-hidden="true"></a>    </span>
+<span id="cb22-11"><a href="rain.html#cb22-11" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> at_goal():</span>
+<span id="cb22-12"><a href="rain.html#cb22-12" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb22-13"><a href="rain.html#cb22-13" aria-hidden="true"></a>        collect_all()</span>
+<span id="cb22-14"><a href="rain.html#cb22-14" aria-hidden="true"></a>    <span class="cf">elif</span> carries_object():</span>
+<span id="cb22-15"><a href="rain.html#cb22-15" aria-hidden="true"></a>        put_down_all_and_move()  </span>
+<span id="cb22-16"><a href="rain.html#cb22-16" aria-hidden="true"></a>    <span class="cf">else</span>:</span>
+<span id="cb22-17"><a href="rain.html#cb22-17" aria-hidden="true"></a>        move()</span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="rain-03" class="section level2" number="6.3">
+<div id="token-05" class="section level2" number="7.5">
 <h2>
-<span class="header-section-number">6.3</span> 창문 닫기 3<a class="anchor" aria-label="anchor" href="#rain-03"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5</span> 토큰 이동 5<a class="anchor" aria-label="anchor" href="#token-05"><i class="fas fa-link"></i></a>
 </h2>
+<p><a href="rain.html#token-04">토큰 이동 5</a>를 일반화하여 토큰이 있는 곳과 그렇지 않는 곳도 리보그가 이동하여 목적을 달성할 수 있도록 한다.</p>
 <ul>
-<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Rain%202&amp;url=worlds%2Ftutorial_en%2Frain2.json">문제 바로가기</a></li>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Tokens%205&amp;url=worlds%2Ftutorial_en%2Ftokens5.json">문제 바로가기</a></li>
 <li>선행 지식
 <ul>
-<li>기본 함수 : <code>move()</code>, <code>turn_left()</code>, <code>build_wall()</code>
+<li>기본 함수 : <code>move()</code>, <code>put()</code>, <code>take()</code>
 </li>
-<li>테스트 조건: <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>at_goal()</code>
+<li>테스트 조건: <code>object_here()</code>, <code>carries_object()</code>, <code>at_goal()</code>
 </li>
-<li>반복 및 제어: <code>while</code> 루프, <code>if</code> 문</li>
+<li>반복과 제어조건: <code>while</code> 루프, <code>if</code> 문과 부정(negation)</li>
 </ul>
 </li>
-<li>힌트: 우회전할지 창문을 닫을지 리보그를 한번더 이동시키면 2가지 경우가 존재한다.</li>
-<li>난이도: 8</li>
-<li>참고: <a href="http://statkclee.github.io/rur-ple/intro/22-rain.htm">러플 - 비가 와요</a>
-</li>
+<li>난이도: 5</li>
 </ul>
 <div class="row">
-<div id="실행결과-17" class="section level3 col-md-6" number="6.3.1">
+<div id="실행결과-22" class="section level3 col-md-6" number="7.5.1">
 <h3>
-<span class="header-section-number">6.3.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-17"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-22"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-figure"><img src="fig/Rain_03.gif" width="70%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="fig/Token_05.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-17" class="section level3 col-md-6" number="6.3.2">
+<div id="코드-22" class="section level3 col-md-6" number="7.5.2">
 <h3>
-<span class="header-section-number">6.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-17"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-22"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="rain.html#cb18-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb18-2"><a href="rain.html#cb18-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb18-3"><a href="rain.html#cb18-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-4"><a href="rain.html#cb18-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-5"><a href="rain.html#cb18-5" aria-hidden="true"></a>    </span>
-<span id="cb18-6"><a href="rain.html#cb18-6" aria-hidden="true"></a>def <span class="kw">move_to_goal</span>()<span class="op">:</span></span>
-<span id="cb18-7"><a href="rain.html#cb18-7" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">3</span><span class="op">:</span></span>
-<span id="cb18-8"><a href="rain.html#cb18-8" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb18-9"><a href="rain.html#cb18-9" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb18-10"><a href="rain.html#cb18-10" aria-hidden="true"></a></span>
-<span id="cb18-11"><a href="rain.html#cb18-11" aria-hidden="true"></a><span class="kw">move_to_goal</span>()</span>
-<span id="cb18-12"><a href="rain.html#cb18-12" aria-hidden="true"></a><span class="kw">move</span>() </span>
-<span id="cb18-13"><a href="rain.html#cb18-13" aria-hidden="true"></a></span>
-<span id="cb18-14"><a href="rain.html#cb18-14" aria-hidden="true"></a>def <span class="kw">go_back</span>()<span class="op">:</span></span>
-<span id="cb18-15"><a href="rain.html#cb18-15" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb18-16"><a href="rain.html#cb18-16" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-17"><a href="rain.html#cb18-17" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb18-18"><a href="rain.html#cb18-18" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-19"><a href="rain.html#cb18-19" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-20"><a href="rain.html#cb18-20" aria-hidden="true"></a>    </span>
-<span id="cb18-21"><a href="rain.html#cb18-21" aria-hidden="true"></a>def <span class="kw">close_window</span>()<span class="op">:</span></span>
-<span id="cb18-22"><a href="rain.html#cb18-22" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_right</span>()</span>
-<span id="cb18-23"><a href="rain.html#cb18-23" aria-hidden="true"></a>    <span class="kw">build_wall</span>()</span>
-<span id="cb18-24"><a href="rain.html#cb18-24" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb18-25"><a href="rain.html#cb18-25" aria-hidden="true"></a></span>
-<span id="cb18-26"><a href="rain.html#cb18-26" aria-hidden="true"></a><span class="cf">while</span> not <span class="kw">at_goal</span>()<span class="op">:</span></span>
-<span id="cb18-27"><a href="rain.html#cb18-27" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">wall_in_front</span>()<span class="op">:</span></span>
-<span id="cb18-28"><a href="rain.html#cb18-28" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span>
-<span id="cb18-29"><a href="rain.html#cb18-29" aria-hidden="true"></a>    <span class="cf">if</span> <span class="kw">front_is_clear</span>() and <span class="kw">right_is_clear</span>()<span class="op">:</span><span class="st">    </span></span>
-<span id="cb18-30"><a href="rain.html#cb18-30" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb18-31"><a href="rain.html#cb18-31" aria-hidden="true"></a>        <span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
-<span id="cb18-32"><a href="rain.html#cb18-32" aria-hidden="true"></a><span class="st">            </span><span class="kw">go_back</span>()</span>
-<span id="cb18-33"><a href="rain.html#cb18-33" aria-hidden="true"></a>            <span class="kw">turn_right</span>()</span>
-<span id="cb18-34"><a href="rain.html#cb18-34" aria-hidden="true"></a>        elif not <span class="kw">right_is_clear</span>()<span class="op">:</span><span class="st">    </span></span>
-<span id="cb18-35"><a href="rain.html#cb18-35" aria-hidden="true"></a><span class="st">            </span><span class="kw">go_back</span>()            </span>
-<span id="cb18-36"><a href="rain.html#cb18-36" aria-hidden="true"></a>            <span class="kw">close_window</span>()</span>
-<span id="cb18-37"><a href="rain.html#cb18-37" aria-hidden="true"></a>    <span class="kw">move</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="rain.html#cb23-1" aria-hidden="true"></a><span class="kw">def</span> collect_all():</span>
+<span id="cb23-2"><a href="rain.html#cb23-2" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb23-3"><a href="rain.html#cb23-3" aria-hidden="true"></a>        take()</span>
+<span id="cb23-4"><a href="rain.html#cb23-4" aria-hidden="true"></a>    move()</span>
+<span id="cb23-5"><a href="rain.html#cb23-5" aria-hidden="true"></a></span>
+<span id="cb23-6"><a href="rain.html#cb23-6" aria-hidden="true"></a><span class="kw">def</span> put_down_all_and_move():</span>
+<span id="cb23-7"><a href="rain.html#cb23-7" aria-hidden="true"></a>    <span class="cf">while</span> carries_object():</span>
+<span id="cb23-8"><a href="rain.html#cb23-8" aria-hidden="true"></a>        put()</span>
+<span id="cb23-9"><a href="rain.html#cb23-9" aria-hidden="true"></a>    move()</span>
+<span id="cb23-10"><a href="rain.html#cb23-10" aria-hidden="true"></a>    </span>
+<span id="cb23-11"><a href="rain.html#cb23-11" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> at_goal():</span>
+<span id="cb23-12"><a href="rain.html#cb23-12" aria-hidden="true"></a>    <span class="cf">if</span> object_here():</span>
+<span id="cb23-13"><a href="rain.html#cb23-13" aria-hidden="true"></a>        collect_all()</span>
+<span id="cb23-14"><a href="rain.html#cb23-14" aria-hidden="true"></a>    <span class="cf">elif</span> carries_object():</span>
+<span id="cb23-15"><a href="rain.html#cb23-15" aria-hidden="true"></a>        put_down_all_and_move()  </span>
+<span id="cb23-16"><a href="rain.html#cb23-16" aria-hidden="true"></a>    <span class="cf">else</span>:</span>
+<span id="cb23-17"><a href="rain.html#cb23-17" aria-hidden="true"></a>        move()</span></code></pre></div>
 </div>
 </div>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></div>
-<div class="empty"></div>
+<div class="prev"><a href="rains.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></div>
+<div class="next"><a href="newspaper.html"><span class="header-section-number">8</span> 신문배달</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#rain"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
+<li><a class="nav-link" href="#rain"><span class="header-section-number">7</span> 토큰</a></li>
 <li>
-<a class="nav-link" href="#rain-01"><span class="header-section-number">6.1</span> 창문 닫기 1</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-15"><span class="header-section-number">6.1.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-15"><span class="header-section-number">6.1.2</span> 코드</a></li>
+<a class="nav-link" href="#token-01"><span class="header-section-number">7.1</span> 토큰 이동 1</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-18"><span class="header-section-number">7.1.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-18"><span class="header-section-number">7.1.2</span> 코드</a></li>
 </ul>
 </li>
 <li>
-<a class="nav-link" href="#rain-02"><span class="header-section-number">6.2</span> 창문 닫기 2</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-16"><span class="header-section-number">6.2.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-16"><span class="header-section-number">6.2.2</span> 코드</a></li>
+<a class="nav-link" href="#token-02"><span class="header-section-number">7.2</span> 토큰 이동 2</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-19"><span class="header-section-number">7.2.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-19"><span class="header-section-number">7.2.2</span> 코드</a></li>
 </ul>
 </li>
 <li>
-<a class="nav-link" href="#rain-03"><span class="header-section-number">6.3</span> 창문 닫기 3</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-17"><span class="header-section-number">6.3.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-17"><span class="header-section-number">6.3.2</span> 코드</a></li>
+<a class="nav-link" href="#token-03"><span class="header-section-number">7.3</span> 토큰 이동 3</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-20"><span class="header-section-number">7.3.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-20"><span class="header-section-number">7.3.2</span> 코드</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#token-04"><span class="header-section-number">7.4</span> 토큰 이동 4</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-21"><span class="header-section-number">7.4.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-21"><span class="header-section-number">7.4.2</span> 코드</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#token-05"><span class="header-section-number">7.5</span> 토큰 이동 5</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-22"><span class="header-section-number">7.5.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-22"><span class="header-section-number">7.5.2</span> 코드</a></li>
 </ul>
 </li>
 </ul>

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)</title>
 <meta name="author" content="ANDRÉ ROBERGE, 이광춘 (번역)">
-<meta name="description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2   2.2.1 실행결과   2.2.2 코드 def turn_right():   turn_left()   turn_left()   turn_left() while...">
+<meta name="description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
 <meta name="generator" content="bookdown 0.23.1 with bs4_book()">
 <meta property="og:title" content="2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)">
 <meta property="og:type" content="book">
-<meta property="og:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2   2.2.1 실행결과   2.2.2 코드 def turn_right():   turn_left()   turn_left()   turn_left() while...">
+<meta property="og:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)">
-<meta name="twitter:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2   2.2.1 실행결과   2.2.2 코드 def turn_right():   turn_left()   turn_left()   turn_left() while...">
+<meta name="twitter:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.9002/transition.js"></script><script src="libs/bs3compat-0.2.5.9002/tabs.js"></script><script src="libs/bs3compat-0.2.5.9002/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -45,7 +45,11 @@
 <li><a class="" href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></li>
 <li><a class="" href="harvest.html"><span class="header-section-number">4</span> 추수 (Harvest)</a></li>
 <li><a class="" href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></li>
-<li><a class="" href="rain.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
+<li><a class="" href="rains.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
+<li><a class="" href="rain.html"><span class="header-section-number">7</span> 토큰</a></li>
+<li><a class="" href="newspaper.html"><span class="header-section-number">8</span> 신문배달</a></li>
+<li><a class="" href="maze.html"><span class="header-section-number">9</span> 미로 탈출</a></li>
+<li><a class="" href="storm.html"><span class="header-section-number">10</span> 폭풍 후에 …</a></li>
 </ul>
 
         <div class="book-extra">
@@ -72,11 +76,10 @@
 <h3>
 <span class="header-section-number">2.1.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-5"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">repeat</span> <span class="fl">4</span> <span class="op">:</span>
-    <span class="kw">repeat</span> <span class="fl">9</span> <span class="op">:</span>
-        <span class="fu">move</span><span class="op">(</span><span class="op">)</span>
-    <span class="fu">turn_left</span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="around.html#cb6-1" aria-hidden="true"></a>repeat <span class="dv">4</span> :</span>
+<span id="cb6-2"><a href="around.html#cb6-2" aria-hidden="true"></a>    repeat <span class="dv">9</span> :</span>
+<span id="cb6-3"><a href="around.html#cb6-3" aria-hidden="true"></a>        move()</span>
+<span id="cb6-4"><a href="around.html#cb6-4" aria-hidden="true"></a>    turn_left()</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -84,6 +87,7 @@
 <h2>
 <span class="header-section-number">2.2</span> Around 2<a class="anchor" aria-label="anchor" href="#around-02"><i class="fas fa-link"></i></a>
 </h2>
+<p>리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로 설정한다.</p>
 <div class="row">
 <div id="실행결과-6" class="section level3 col-md-6" number="2.2.1">
 <h3>
@@ -95,17 +99,25 @@
 <h3>
 <span class="header-section-number">2.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-6"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="around.html#cb7-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb7-2"><a href="around.html#cb7-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb7-3"><a href="around.html#cb7-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb7-4"><a href="around.html#cb7-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="around.html#cb7-1" aria-hidden="true"></a><span class="kw">def</span> turn_right():</span>
+<span id="cb7-2"><a href="around.html#cb7-2" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb7-3"><a href="around.html#cb7-3" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb7-4"><a href="around.html#cb7-4" aria-hidden="true"></a>    turn_left()</span>
 <span id="cb7-5"><a href="around.html#cb7-5" aria-hidden="true"></a></span>
-<span id="cb7-6"><a href="around.html#cb7-6" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">front_is_clear</span>() <span class="op">:</span></span>
-<span id="cb7-7"><a href="around.html#cb7-7" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
-<span id="cb7-8"><a href="around.html#cb7-8" aria-hidden="true"></a>    <span class="cf">if</span> <span class="kw">wall_in_front</span>() <span class="op">:</span></span>
-<span id="cb7-9"><a href="around.html#cb7-9" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span>
-<span id="cb7-10"><a href="around.html#cb7-10" aria-hidden="true"></a>    <span class="cf">if</span> <span class="kw">right_is_clear</span>() <span class="op">:</span></span>
-<span id="cb7-11"><a href="around.html#cb7-11" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span></code></pre></div>
+<span id="cb7-6"><a href="around.html#cb7-6" aria-hidden="true"></a><span class="co"># 목표지점 표식    </span></span>
+<span id="cb7-7"><a href="around.html#cb7-7" aria-hidden="true"></a><span class="kw">def</span> drop_token():</span>
+<span id="cb7-8"><a href="around.html#cb7-8" aria-hidden="true"></a>    put(<span class="st">"token"</span>)</span>
+<span id="cb7-9"><a href="around.html#cb7-9" aria-hidden="true"></a></span>
+<span id="cb7-10"><a href="around.html#cb7-10" aria-hidden="true"></a>drop_token()</span>
+<span id="cb7-11"><a href="around.html#cb7-11" aria-hidden="true"></a>move()</span>
+<span id="cb7-12"><a href="around.html#cb7-12" aria-hidden="true"></a></span>
+<span id="cb7-13"><a href="around.html#cb7-13" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> object_here():</span>
+<span id="cb7-14"><a href="around.html#cb7-14" aria-hidden="true"></a>    move()</span>
+<span id="cb7-15"><a href="around.html#cb7-15" aria-hidden="true"></a>    <span class="cf">if</span> wall_in_front() :</span>
+<span id="cb7-16"><a href="around.html#cb7-16" aria-hidden="true"></a>        turn_left()</span>
+<span id="cb7-17"><a href="around.html#cb7-17" aria-hidden="true"></a>    <span class="cf">if</span> right_is_clear() :</span>
+<span id="cb7-18"><a href="around.html#cb7-18" aria-hidden="true"></a>        turn_right()</span>
+<span id="cb7-19"><a href="around.html#cb7-19" aria-hidden="true"></a>        move()</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -113,6 +125,7 @@
 <h2>
 <span class="header-section-number">2.3</span> Around 3<a class="anchor" aria-label="anchor" href="#around-03"><i class="fas fa-link"></i></a>
 </h2>
+<p><a href="around.html#around-02">Around 2</a>와 마찬가지로 토큰을 떨어뜨려 표식을 하고 자리를 한칸 이동한 후에 돌아다니는 작업을 수행한다.</p>
 <div class="row">
 <div id="실행결과-7" class="section level3 col-md-6" number="2.3.1">
 <h3>
@@ -124,19 +137,27 @@
 <h3>
 <span class="header-section-number">2.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-7"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="around.html#cb8-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb8-2"><a href="around.html#cb8-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb8-3"><a href="around.html#cb8-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb8-4"><a href="around.html#cb8-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="around.html#cb8-1" aria-hidden="true"></a><span class="kw">def</span> turn_right():</span>
+<span id="cb8-2"><a href="around.html#cb8-2" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb8-3"><a href="around.html#cb8-3" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb8-4"><a href="around.html#cb8-4" aria-hidden="true"></a>    turn_left()</span>
 <span id="cb8-5"><a href="around.html#cb8-5" aria-hidden="true"></a></span>
-<span id="cb8-6"><a href="around.html#cb8-6" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">46</span><span class="op">:</span></span>
-<span id="cb8-7"><a href="around.html#cb8-7" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
-<span id="cb8-8"><a href="around.html#cb8-8" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span>
-<span id="cb8-9"><a href="around.html#cb8-9" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
-<span id="cb8-10"><a href="around.html#cb8-10" aria-hidden="true"></a>    elif <span class="kw">front_is_clear</span>()<span class="op">:</span></span>
-<span id="cb8-11"><a href="around.html#cb8-11" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb8-12"><a href="around.html#cb8-12" aria-hidden="true"></a>    <span class="cf">else</span><span class="op">:</span></span>
-<span id="cb8-13"><a href="around.html#cb8-13" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span></code></pre></div>
+<span id="cb8-6"><a href="around.html#cb8-6" aria-hidden="true"></a><span class="co"># 목표지점 표식    </span></span>
+<span id="cb8-7"><a href="around.html#cb8-7" aria-hidden="true"></a><span class="kw">def</span> drop_token():</span>
+<span id="cb8-8"><a href="around.html#cb8-8" aria-hidden="true"></a>    put(<span class="st">"token"</span>)</span>
+<span id="cb8-9"><a href="around.html#cb8-9" aria-hidden="true"></a></span>
+<span id="cb8-10"><a href="around.html#cb8-10" aria-hidden="true"></a>drop_token()</span>
+<span id="cb8-11"><a href="around.html#cb8-11" aria-hidden="true"></a>turn_left()</span>
+<span id="cb8-12"><a href="around.html#cb8-12" aria-hidden="true"></a>move()</span>
+<span id="cb8-13"><a href="around.html#cb8-13" aria-hidden="true"></a></span>
+<span id="cb8-14"><a href="around.html#cb8-14" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> object_here():</span>
+<span id="cb8-15"><a href="around.html#cb8-15" aria-hidden="true"></a>    <span class="cf">if</span> right_is_clear():</span>
+<span id="cb8-16"><a href="around.html#cb8-16" aria-hidden="true"></a>        turn_right()</span>
+<span id="cb8-17"><a href="around.html#cb8-17" aria-hidden="true"></a>        move()</span>
+<span id="cb8-18"><a href="around.html#cb8-18" aria-hidden="true"></a>    <span class="cf">elif</span> front_is_clear():</span>
+<span id="cb8-19"><a href="around.html#cb8-19" aria-hidden="true"></a>        move()</span>
+<span id="cb8-20"><a href="around.html#cb8-20" aria-hidden="true"></a>    <span class="cf">else</span>:</span>
+<span id="cb8-21"><a href="around.html#cb8-21" aria-hidden="true"></a>        turn_left()</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -155,19 +176,32 @@
 <h3>
 <span class="header-section-number">2.4.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-8"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="around.html#cb9-1" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb9-2"><a href="around.html#cb9-2" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb9-3"><a href="around.html#cb9-3" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb9-4"><a href="around.html#cb9-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="around.html#cb9-1" aria-hidden="true"></a><span class="kw">def</span> turn_right():</span>
+<span id="cb9-2"><a href="around.html#cb9-2" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb9-3"><a href="around.html#cb9-3" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb9-4"><a href="around.html#cb9-4" aria-hidden="true"></a>    turn_left()</span>
 <span id="cb9-5"><a href="around.html#cb9-5" aria-hidden="true"></a></span>
-<span id="cb9-6"><a href="around.html#cb9-6" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">50</span><span class="op">:</span></span>
-<span id="cb9-7"><a href="around.html#cb9-7" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> <span class="kw">right_is_clear</span>()<span class="op">:</span></span>
-<span id="cb9-8"><a href="around.html#cb9-8" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_right</span>()</span>
-<span id="cb9-9"><a href="around.html#cb9-9" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
-<span id="cb9-10"><a href="around.html#cb9-10" aria-hidden="true"></a>    elif <span class="kw">front_is_clear</span>()<span class="op">:</span></span>
-<span id="cb9-11"><a href="around.html#cb9-11" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb9-12"><a href="around.html#cb9-12" aria-hidden="true"></a>    <span class="cf">else</span><span class="op">:</span></span>
-<span id="cb9-13"><a href="around.html#cb9-13" aria-hidden="true"></a><span class="st">        </span><span class="kw">turn_left</span>()</span></code></pre></div>
+<span id="cb9-6"><a href="around.html#cb9-6" aria-hidden="true"></a><span class="kw">def</span> turn_around():</span>
+<span id="cb9-7"><a href="around.html#cb9-7" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb9-8"><a href="around.html#cb9-8" aria-hidden="true"></a>    turn_left()</span>
+<span id="cb9-9"><a href="around.html#cb9-9" aria-hidden="true"></a>    </span>
+<span id="cb9-10"><a href="around.html#cb9-10" aria-hidden="true"></a>    </span>
+<span id="cb9-11"><a href="around.html#cb9-11" aria-hidden="true"></a><span class="co"># 목표지점 표식    </span></span>
+<span id="cb9-12"><a href="around.html#cb9-12" aria-hidden="true"></a><span class="kw">def</span> drop_token():</span>
+<span id="cb9-13"><a href="around.html#cb9-13" aria-hidden="true"></a>    put(<span class="st">"token"</span>)</span>
+<span id="cb9-14"><a href="around.html#cb9-14" aria-hidden="true"></a></span>
+<span id="cb9-15"><a href="around.html#cb9-15" aria-hidden="true"></a>drop_token()</span>
+<span id="cb9-16"><a href="around.html#cb9-16" aria-hidden="true"></a>turn_around()</span>
+<span id="cb9-17"><a href="around.html#cb9-17" aria-hidden="true"></a>move()</span>
+<span id="cb9-18"><a href="around.html#cb9-18" aria-hidden="true"></a></span>
+<span id="cb9-19"><a href="around.html#cb9-19" aria-hidden="true"></a><span class="cf">while</span> <span class="kw">not</span> object_here():</span>
+<span id="cb9-20"><a href="around.html#cb9-20" aria-hidden="true"></a>    <span class="cf">if</span> right_is_clear():</span>
+<span id="cb9-21"><a href="around.html#cb9-21" aria-hidden="true"></a>        turn_right()</span>
+<span id="cb9-22"><a href="around.html#cb9-22" aria-hidden="true"></a>        move()</span>
+<span id="cb9-23"><a href="around.html#cb9-23" aria-hidden="true"></a>    <span class="cf">elif</span> front_is_clear():</span>
+<span id="cb9-24"><a href="around.html#cb9-24" aria-hidden="true"></a>        move()</span>
+<span id="cb9-25"><a href="around.html#cb9-25" aria-hidden="true"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-26"><a href="around.html#cb9-26" aria-hidden="true"></a>        turn_left()</span></code></pre></div>
 </div>
 </div>
 
