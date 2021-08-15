@@ -7,7 +7,9 @@ rmd_files: [
   "index.Rmd",
   "01-home.Rmd",
   "02-around.Rmd",
-  "03-center.Rmd"]
+  "03-center.Rmd",
+  "04-harvest.Rmd",
+  "05-hurdle.Rmd"]
 new_session: 'yes'
 output_dir: docs
 
