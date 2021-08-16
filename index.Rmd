@@ -26,6 +26,7 @@ knitr::write_bib(c(
 knitr::opts_chunk$set(global.device = TRUE,
                       echo = FALSE, message=FALSE, warning=FALSE,
                       comment="", digits = 3, tidy = FALSE, prompt = FALSE, fig.align = 'center')
+
 ```
 
 # 리보그 세상 {#reeborg .unnumbered}
