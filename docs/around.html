@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)</title>
 <meta name="author" content="ANDRÉ ROBERGE, 이광춘 (번역)">
-<meta name="description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
+<meta name="description" content="2.1 Around 1 문제 바로가기 리보그를 세상한바퀴 돌게 만드는 것이다. 로봇의 좌표 (x, y) = (1, 1) 라서 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) = (1, 1) 으로 이동시킨다. 난이도: 1 함수: move(), turn_left(), put()  난이도: 2 함수: move(), turn_left(), put()...">
 <meta name="generator" content="bookdown 0.23.1 with bs4_book()">
 <meta property="og:title" content="2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)">
 <meta property="og:type" content="book">
-<meta property="og:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
+<meta property="og:description" content="2.1 Around 1 문제 바로가기 리보그를 세상한바퀴 돌게 만드는 것이다. 로봇의 좌표 (x, y) = (1, 1) 라서 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) = (1, 1) 으로 이동시킨다. 난이도: 1 함수: move(), turn_left(), put()  난이도: 2 함수: move(), turn_left(), put()...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2 돌아다니기 (Around) | 리보그 세상(Reeborg’s World)">
-<meta name="twitter:description" content="2.1 Around 1   2.1.1 실행결과   2.1.2 코드 repeat 4 :   repeat 9 :     move()   turn_left()   2.2 Around 2 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로...">
+<meta name="twitter:description" content="2.1 Around 1 문제 바로가기 리보그를 세상한바퀴 돌게 만드는 것이다. 로봇의 좌표 (x, y) = (1, 1) 라서 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) = (1, 1) 으로 이동시킨다. 난이도: 1 함수: move(), turn_left(), put()  난이도: 2 함수: move(), turn_left(), put()...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.9002/transition.js"></script><script src="libs/bs3compat-0.2.5.9002/tabs.js"></script><script src="libs/bs3compat-0.2.5.9002/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -42,13 +42,13 @@
 <li><a class="" href="index.html">리보그 세상</a></li>
 <li><a class="" href="intro.html"><span class="header-section-number">1</span> 집 (Home)</a></li>
 <li><a class="active" href="around.html"><span class="header-section-number">2</span> 돌아다니기 (Around)</a></li>
-<li><a class="" href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></li>
-<li><a class="" href="harvest.html"><span class="header-section-number">4</span> 추수 (Harvest)</a></li>
-<li><a class="" href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></li>
+<li><a class="" href="newspaper.html"><span class="header-section-number">3</span> 신문배달</a></li>
+<li><a class="" href="hurdle.html"><span class="header-section-number">4</span> 장애물 넘기</a></li>
+<li><a class="" href="rain.html"><span class="header-section-number">5</span> 토큰</a></li>
 <li><a class="" href="rains.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
-<li><a class="" href="rain.html"><span class="header-section-number">7</span> 토큰</a></li>
-<li><a class="" href="newspaper.html"><span class="header-section-number">8</span> 신문배달</a></li>
-<li><a class="" href="maze.html"><span class="header-section-number">9</span> 미로 탈출</a></li>
+<li><a class="" href="maze.html"><span class="header-section-number">7</span> 미로 탈출</a></li>
+<li><a class="" href="center.html"><span class="header-section-number">8</span> 중심 (center)</a></li>
+<li><a class="" href="harvest.html"><span class="header-section-number">9</span> 추수 (Harvest)</a></li>
 <li><a class="" href="storm.html"><span class="header-section-number">10</span> 폭풍 후에 …</a></li>
 </ul>
 
@@ -65,6 +65,29 @@
 <h2>
 <span class="header-section-number">2.1</span> Around 1<a class="anchor" aria-label="anchor" href="#around-01"><i class="fas fa-link"></i></a>
 </h2>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Around%201&amp;url=worlds%2Ftutorial_en%2Faround1.json">문제 바로가기</a></li>
+<li>리보그를 세상한바퀴 돌게 만드는 것이다.
+<ul>
+<li>로봇의 좌표 (x, y) = (1, 1) 라서 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) = (1, 1) 으로 이동시킨다.</li>
+</ul>
+</li>
+<li>난이도: 1
+<ul>
+<li>함수: <code>move()</code>, <code>turn_left()</code>, <code>put()</code>
+</li>
+</ul>
+</li>
+<li>난이도: 2
+<ul>
+<li>함수: <code>move()</code>, <code>turn_left()</code>, <code>put()</code>
+</li>
+<li>테스트 함수: <code>front_is_clear()</code>, <code>wall_in_front()</code>, <code>object_here()</code>
+</li>
+<li>반복 <code>while</code>, <code>repeat</code>/<code>for</code> 루프와 제어 <code>if</code>문</li>
+</ul>
+</li>
+</ul>
 <div class="row">
 <div id="실행결과-5" class="section level3 col-md-6" number="2.1.1">
 <h3>
@@ -88,6 +111,23 @@
 <span class="header-section-number">2.2</span> Around 2<a class="anchor" aria-label="anchor" href="#around-02"><i class="fas fa-link"></i></a>
 </h2>
 <p>리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로 설정한다.</p>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Around%202&amp;url=worlds%2Ftutorial_en%2Faround2.json">문제 바로가기</a></li>
+<li>리보그를 세상한바퀴 돌게 만드는 것이다.
+<ul>
+<li>로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.</li>
+</ul>
+</li>
+<li>난이도: 3
+<ul>
+<li>함수: <code>move()</code>, <code>turn_left()</code>, <code>put()</code>
+</li>
+<li>테스트 함수: <code>front_is_clear()</code>, <code>wall_in_front()</code>, <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>object_here()</code>
+</li>
+<li>반복 <code>while</code>, <code>repeat</code>/<code>for</code> 루프와 제어 <code>if</code>문</li>
+</ul>
+</li>
+</ul>
 <div class="row">
 <div id="실행결과-6" class="section level3 col-md-6" number="2.2.1">
 <h3>
@@ -126,6 +166,23 @@
 <span class="header-section-number">2.3</span> Around 3<a class="anchor" aria-label="anchor" href="#around-03"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="around.html#around-02">Around 2</a>와 마찬가지로 토큰을 떨어뜨려 표식을 하고 자리를 한칸 이동한 후에 돌아다니는 작업을 수행한다.</p>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Around%203&amp;url=worlds%2Ftutorial_en%2Faround3.json">문제 바로가기</a></li>
+<li>리보그를 세상한바퀴 돌게 만드는 것이다.
+<ul>
+<li>로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.</li>
+</ul>
+</li>
+<li>난이도: 4
+<ul>
+<li>함수: <code>move()</code>, <code>turn_left()</code>, <code>put()</code>
+</li>
+<li>테스트 함수: <code>front_is_clear()</code>, <code>wall_in_front()</code>, <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>object_here()</code>
+</li>
+<li>반복 <code>while</code>, <code>repeat</code>/<code>for</code> 루프와 제어 <code>if</code>문</li>
+</ul>
+</li>
+</ul>
 <div class="row">
 <div id="실행결과-7" class="section level3 col-md-6" number="2.3.1">
 <h3>
@@ -165,6 +222,24 @@
 <h2>
 <span class="header-section-number">2.4</span> Around 4<a class="anchor" aria-label="anchor" href="#around-04"><i class="fas fa-link"></i></a>
 </h2>
+<p>본 문제를 해결하게 되면 앞선 Around 1,2,3번 문제도 작성한 프로그램으로 일반화시켜 해결할 수 있다.</p>
+<ul>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Around%203&amp;url=worlds%2Ftutorial_en%2Faround3.json">문제 바로가기</a></li>
+<li>리보그를 세상한바퀴 돌게 만드는 것이다.
+<ul>
+<li>로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.</li>
+</ul>
+</li>
+<li>난이도: 5
+<ul>
+<li>함수: <code>move()</code>, <code>turn_left()</code>, <code>put()</code>
+</li>
+<li>테스트 함수: <code>front_is_clear()</code>, <code>wall_in_front()</code>, <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>object_here()</code>
+</li>
+<li>반복 <code>while</code>, <code>if/elif/else</code> 문</li>
+</ul>
+</li>
+</ul>
 <div class="row">
 <div id="실행결과-8" class="section level3 col-md-6" number="2.4.1">
 <h3>
@@ -209,7 +284,7 @@
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="intro.html"><span class="header-section-number">1</span> 집 (Home)</a></div>
-<div class="next"><a href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></div>
+<div class="next"><a href="newspaper.html"><span class="header-section-number">3</span> 신문배달</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">

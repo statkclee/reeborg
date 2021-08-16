@@ -2,6 +2,17 @@
 
 ## Around 1 {#around-01}
 
+- [문제 바로가기](https://reeborg.ca/reeborg.html?lang=ko-en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Around%201&url=worlds%2Ftutorial_en%2Faround1.json)
+- 리보그를 세상한바퀴 돌게 만드는 것이다.
+    - 로봇의 좌표 (x, y) = (1, 1) 라서 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) = (1, 1) 으로 이동시킨다.
+- 난이도: 1
+    - 함수: `move()`, `turn_left()`, `put()`
+- 난이도: 2
+    - 함수: `move()`, `turn_left()`, `put()`
+    - 테스트 함수: `front_is_clear()`, `wall_in_front()`, `object_here()`
+    - 반복 `while`, `repeat`/`for` 루프와 제어 `if`문
+
+
 ::: {.row}
 ::: {.col-md-6}
 ### 실행결과
@@ -31,6 +42,14 @@ repeat 4 :
 ## Around 2 {#around-02}
 
 리보그가 토큰(token)을 가지고 다니는 점을 이용하여 리보그 세상을 한바퀴 삥 둘러 돌아다닌 후에 제자리로 돌아온 위치를 표식하고 이를 프로그램 종료 조건으로 설정한다.
+
+- [문제 바로가기](https://reeborg.ca/reeborg.html?lang=ko-en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Around%202&url=worlds%2Ftutorial_en%2Faround2.json)
+- 리보그를 세상한바퀴 돌게 만드는 것이다.
+    - 로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.
+- 난이도: 3
+    - 함수: `move()`, `turn_left()`, `put()`
+    - 테스트 함수: `front_is_clear()`, `wall_in_front()`, `right_is_clear()`, `wall_on_right()`, `object_here()`
+    - 반복 `while`, `repeat`/`for` 루프와 제어 `if`문
 
 ::: {.row}
 ::: {.col-md-6}
@@ -79,6 +98,14 @@ while not object_here():
 
 [Around 2](#around-02)와 마찬가지로 토큰을 떨어뜨려 표식을 하고 자리를 한칸 이동한 후에 돌아다니는 작업을 수행한다.
 
+- [문제 바로가기](https://reeborg.ca/reeborg.html?lang=ko-en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Around%203&url=worlds%2Ftutorial_en%2Faround3.json)
+- 리보그를 세상한바퀴 돌게 만드는 것이다.
+    - 로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.
+- 난이도: 4
+    - 함수: `move()`, `turn_left()`, `put()`
+    - 테스트 함수: `front_is_clear()`, `wall_in_front()`, `right_is_clear()`, `wall_on_right()`, `object_here()`
+    - 반복 `while`, `repeat`/`for` 루프와 제어 `if`문
+
 ::: {.row}
 ::: {.col-md-6}
 ### 실행결과
@@ -124,6 +151,16 @@ while not object_here():
 
 
 ## Around 4 {#around-04}
+
+본 문제를 해결하게 되면 앞선 Around 1,2,3번 문제도 작성한 프로그램으로 일반화시켜 해결할 수 있다.
+
+- [문제 바로가기](https://reeborg.ca/reeborg.html?lang=ko-en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Around%203&url=worlds%2Ftutorial_en%2Faround3.json)
+- 리보그를 세상한바퀴 돌게 만드는 것이다.
+    - 로봇의 좌표 (x, y) 가 임의 랜덤으로 주어졌기 때문에 로봇의 최종위치를 한바퀴 돌아 반드시 (x, y) 랜덤 위치로 이동시킨다.
+- 난이도: 5
+    - 함수: `move()`, `turn_left()`, `put()`
+    - 테스트 함수: `front_is_clear()`, `wall_in_front()`, `right_is_clear()`, `wall_on_right()`, `object_here()`
+    - 반복 `while`, `if/elif/else` 문
 
 
 ::: {.row}

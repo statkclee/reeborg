@@ -30,7 +30,7 @@ knitr::opts_chunk$set(global.device = TRUE,
 
 # 리보그 세상 {#reeborg .unnumbered}
 
-리보그 세상(Reeborg's World)는 [컴퓨터 과학 언플러그드](https://statkclee.github.io/unplugged/)를 통해 전혀 컴퓨터가 없는 상태에서 주요 개념을 빠른 시간내에 잡을 수 있고, 이후 블록 프로그래밍(Block Programming)으로 MIT에서 개발한 [스크래치(Scratch)](https://scratch.mit.edu/)와 [타이디블록(Tidyblocks)](https://tidyblocks.tech/)를 통해 비쥬얼 프로그래밍을 즐길 수 있다. 그 다음 단계로 소프트웨어 프로그래밍 언어인 파이썬, 데이터 프로그래밍 언어인 R 로 바로 넘어가는 것이 아니라 `move()`, `turn_left()` 두개의 동사를 활용한 [리보그 세상(Reeborg's World)](https://reeborg.ca/)로 기초를 탄탄히 다져놓아야 한다.
+리보그 세상(Reeborg's World)는 [컴퓨터 과학 언플러그드](https://statkclee.github.io/unplugged/)를 통해 전혀 컴퓨터가 없는 상태에서 주요 개념을 빠른 시간내에 잡을 수 있고, 이후 블록 프로그래밍(Block Programming)으로 MIT에서 개발한 [스크래치(Scratch)](https://scratch.mit.edu/)와 [타이디블록(Tidyblocks)](https://tidyblocks.tech/)를 통해 비쥬얼 프로그래밍을 즐길 수 있다. 그 다음 단계로 소프트웨어 프로그래밍 언어인 파이썬, 데이터 프로그래밍 언어인 R 로 바로 넘어가는 것이 아니라 `move()`, `turn_left()` 두개의 동사를 활용한 [리보그 세상(Reeborg's World)](https://reeborg.ca/)로 기초를 탄탄히 다져놓아야 한다. [리보그 세상 도움말](https://reeborg.ca/docs/ko/)도 본격적인 프로그래밍으로 넘어가는데 도움이 될 것이다. 리보그는 저자가 해답(Solution)을 특별히 제시하고 있지는 않고 힌트를 제시하는 수준으로 인터넷에 정보가 공유되고 있으니 각자 리보그 과제를 함께 고민하면서 생각근육을 많이 키워나갔으면 합니다. 
 
 ![](fig/reeborg-project.png){width="639"}
 
@@ -53,6 +53,8 @@ knitr::opts_chunk$set(global.device = TRUE,
 -   [컴퓨터 과학 언플러그드](https://statkclee.github.io/unplugged/)
 
 -   [TidyBlocks](https://tidyblocks.tech/)
+
+-   [리보그 세상 도움말](https://reeborg.ca/docs/ko/)
 
 -   [모두를 위한 파이썬](https://statkclee.github.io/pythonlearn-kr/)
 

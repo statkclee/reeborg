@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>4 추수 (Harvest) | 리보그 세상(Reeborg’s World)</title>
+<title>9 추수 (Harvest) | 리보그 세상(Reeborg’s World)</title>
 <meta name="author" content="ANDRÉ ROBERGE, 이광춘 (번역)">
-<meta name="description" content="4.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   4.1.1 실행결과   4.1.2 코드...">
+<meta name="description" content="9.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   9.1.1 실행결과   9.1.2 코드...">
 <meta name="generator" content="bookdown 0.23.1 with bs4_book()">
-<meta property="og:title" content="4 추수 (Harvest) | 리보그 세상(Reeborg’s World)">
+<meta property="og:title" content="9 추수 (Harvest) | 리보그 세상(Reeborg’s World)">
 <meta property="og:type" content="book">
-<meta property="og:description" content="4.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   4.1.1 실행결과   4.1.2 코드...">
+<meta property="og:description" content="9.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   9.1.1 실행결과   9.1.2 코드...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4 추수 (Harvest) | 리보그 세상(Reeborg’s World)">
-<meta name="twitter:description" content="4.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   4.1.1 실행결과   4.1.2 코드...">
+<meta name="twitter:title" content="9 추수 (Harvest) | 리보그 세상(Reeborg’s World)">
+<meta name="twitter:description" content="9.1 추수 1 문제 바로가기 선행 지식 기본 함수 : move(), turn_left(), take() 테스트 함수 : object_here() 반복: while 혹은 if 과 결함 힌트: harvest_one_row() 함수를 작성하고 6번 반복 난이도: 3 참고: 리보그 세상 - 추가된 추수 도전과제   9.1.1 실행결과   9.1.2 코드...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.9002/transition.js"></script><script src="libs/bs3compat-0.2.5.9002/tabs.js"></script><script src="libs/bs3compat-0.2.5.9002/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -42,13 +42,13 @@
 <li><a class="" href="index.html">리보그 세상</a></li>
 <li><a class="" href="intro.html"><span class="header-section-number">1</span> 집 (Home)</a></li>
 <li><a class="" href="around.html"><span class="header-section-number">2</span> 돌아다니기 (Around)</a></li>
-<li><a class="" href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></li>
-<li><a class="active" href="harvest.html"><span class="header-section-number">4</span> 추수 (Harvest)</a></li>
-<li><a class="" href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></li>
+<li><a class="" href="newspaper.html"><span class="header-section-number">3</span> 신문배달</a></li>
+<li><a class="" href="hurdle.html"><span class="header-section-number">4</span> 장애물 넘기</a></li>
+<li><a class="" href="rain.html"><span class="header-section-number">5</span> 토큰</a></li>
 <li><a class="" href="rains.html"><span class="header-section-number">6</span> 비바람 창문 닫기</a></li>
-<li><a class="" href="rain.html"><span class="header-section-number">7</span> 토큰</a></li>
-<li><a class="" href="newspaper.html"><span class="header-section-number">8</span> 신문배달</a></li>
-<li><a class="" href="maze.html"><span class="header-section-number">9</span> 미로 탈출</a></li>
+<li><a class="" href="maze.html"><span class="header-section-number">7</span> 미로 탈출</a></li>
+<li><a class="" href="center.html"><span class="header-section-number">8</span> 중심 (center)</a></li>
+<li><a class="active" href="harvest.html"><span class="header-section-number">9</span> 추수 (Harvest)</a></li>
 <li><a class="" href="storm.html"><span class="header-section-number">10</span> 폭풍 후에 …</a></li>
 </ul>
 
@@ -57,13 +57,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="harvest" class="section level1" number="4">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="harvest" class="section level1" number="9">
 <h1>
-<span class="header-section-number">4</span> 추수 (Harvest)<a class="anchor" aria-label="anchor" href="#harvest"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9</span> 추수 (Harvest)<a class="anchor" aria-label="anchor" href="#harvest"><i class="fas fa-link"></i></a>
 </h1>
-<div id="harvest-01" class="section level2" number="4.1">
+<div id="harvest-01" class="section level2" number="9.1">
 <h2>
-<span class="header-section-number">4.1</span> 추수 1<a class="anchor" aria-label="anchor" href="#harvest-01"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1</span> 추수 1<a class="anchor" aria-label="anchor" href="#harvest-01"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Harvest%201&amp;url=worlds%2Ftutorial_en%2Fharvest1.json">문제 바로가기</a></li>
@@ -82,68 +82,68 @@
 </li>
 </ul>
 <div class="row">
-<div id="실행결과-10" class="section level3 col-md-6" number="4.1.1">
+<div id="실행결과-25" class="section level3 col-md-6" number="9.1.1">
 <h3>
-<span class="header-section-number">4.1.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-10"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-25"><i class="fas fa-link"></i></a>
 </h3>
 <div class="inline-figure"><img src="fig/Harvest_01.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-10" class="section level3 col-md-6" number="4.1.2">
+<div id="코드-25" class="section level3 col-md-6" number="9.1.2">
 <h3>
-<span class="header-section-number">4.1.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-10"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-25"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="harvest.html#cb11-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
-<span id="cb11-2"><a href="harvest.html#cb11-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb11-3"><a href="harvest.html#cb11-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb11-4"><a href="harvest.html#cb11-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb11-5"><a href="harvest.html#cb11-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb11-6"><a href="harvest.html#cb11-6" aria-hidden="true"></a>    </span>
-<span id="cb11-7"><a href="harvest.html#cb11-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
-<span id="cb11-8"><a href="harvest.html#cb11-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
-<span id="cb11-9"><a href="harvest.html#cb11-9" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb11-10"><a href="harvest.html#cb11-10" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb11-11"><a href="harvest.html#cb11-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb11-12"><a href="harvest.html#cb11-12" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb11-13"><a href="harvest.html#cb11-13" aria-hidden="true"></a>  </span>
-<span id="cb11-14"><a href="harvest.html#cb11-14" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
-<span id="cb11-15"><a href="harvest.html#cb11-15" aria-hidden="true"></a></span>
-<span id="cb11-16"><a href="harvest.html#cb11-16" aria-hidden="true"></a><span class="co"># 한줄 추수 ----</span></span>
-<span id="cb11-17"><a href="harvest.html#cb11-17" aria-hidden="true"></a>def <span class="kw">harvest_one_row</span>()<span class="op">:</span></span>
-<span id="cb11-18"><a href="harvest.html#cb11-18" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb11-19"><a href="harvest.html#cb11-19" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb11-20"><a href="harvest.html#cb11-20" aria-hidden="true"></a>    <span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb11-21"><a href="harvest.html#cb11-21" aria-hidden="true"></a><span class="st">        </span><span class="cf">if</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb11-22"><a href="harvest.html#cb11-22" aria-hidden="true"></a><span class="st">            </span><span class="kw">take</span>()</span>
-<span id="cb11-23"><a href="harvest.html#cb11-23" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
-<span id="cb11-24"><a href="harvest.html#cb11-24" aria-hidden="true"></a>          </span>
-<span id="cb11-25"><a href="harvest.html#cb11-25" aria-hidden="true"></a><span class="co"># harvest_one_row()</span></span>
-<span id="cb11-26"><a href="harvest.html#cb11-26" aria-hidden="true"></a></span>
-<span id="cb11-27"><a href="harvest.html#cb11-27" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
-<span id="cb11-28"><a href="harvest.html#cb11-28" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
-<span id="cb11-29"><a href="harvest.html#cb11-29" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb11-30"><a href="harvest.html#cb11-30" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb11-31"><a href="harvest.html#cb11-31" aria-hidden="true"></a></span>
-<span id="cb11-32"><a href="harvest.html#cb11-32" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
-<span id="cb11-33"><a href="harvest.html#cb11-33" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
-<span id="cb11-34"><a href="harvest.html#cb11-34" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">7</span><span class="op">:</span></span>
-<span id="cb11-35"><a href="harvest.html#cb11-35" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb11-36"><a href="harvest.html#cb11-36" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb11-37"><a href="harvest.html#cb11-37" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb11-38"><a href="harvest.html#cb11-38" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb11-39"><a href="harvest.html#cb11-39" aria-hidden="true"></a>    </span>
-<span id="cb11-40"><a href="harvest.html#cb11-40" aria-hidden="true"></a><span class="co"># move_to_next_row()</span></span>
-<span id="cb11-41"><a href="harvest.html#cb11-41" aria-hidden="true"></a></span>
-<span id="cb11-42"><a href="harvest.html#cb11-42" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
-<span id="cb11-43"><a href="harvest.html#cb11-43" aria-hidden="true"></a></span>
-<span id="cb11-44"><a href="harvest.html#cb11-44" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb11-45"><a href="harvest.html#cb11-45" aria-hidden="true"></a><span class="st">    </span><span class="kw">harvest_one_row</span>()</span>
-<span id="cb11-46"><a href="harvest.html#cb11-46" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="harvest.html#cb26-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
+<span id="cb26-2"><a href="harvest.html#cb26-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
+<span id="cb26-3"><a href="harvest.html#cb26-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb26-4"><a href="harvest.html#cb26-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb26-5"><a href="harvest.html#cb26-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb26-6"><a href="harvest.html#cb26-6" aria-hidden="true"></a>    </span>
+<span id="cb26-7"><a href="harvest.html#cb26-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
+<span id="cb26-8"><a href="harvest.html#cb26-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
+<span id="cb26-9"><a href="harvest.html#cb26-9" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb26-10"><a href="harvest.html#cb26-10" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb26-11"><a href="harvest.html#cb26-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb26-12"><a href="harvest.html#cb26-12" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb26-13"><a href="harvest.html#cb26-13" aria-hidden="true"></a>  </span>
+<span id="cb26-14"><a href="harvest.html#cb26-14" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
+<span id="cb26-15"><a href="harvest.html#cb26-15" aria-hidden="true"></a></span>
+<span id="cb26-16"><a href="harvest.html#cb26-16" aria-hidden="true"></a><span class="co"># 한줄 추수 ----</span></span>
+<span id="cb26-17"><a href="harvest.html#cb26-17" aria-hidden="true"></a>def <span class="kw">harvest_one_row</span>()<span class="op">:</span></span>
+<span id="cb26-18"><a href="harvest.html#cb26-18" aria-hidden="true"></a><span class="st">    </span><span class="cf">if</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb26-19"><a href="harvest.html#cb26-19" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb26-20"><a href="harvest.html#cb26-20" aria-hidden="true"></a>    <span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb26-21"><a href="harvest.html#cb26-21" aria-hidden="true"></a><span class="st">        </span><span class="cf">if</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb26-22"><a href="harvest.html#cb26-22" aria-hidden="true"></a><span class="st">            </span><span class="kw">take</span>()</span>
+<span id="cb26-23"><a href="harvest.html#cb26-23" aria-hidden="true"></a>        <span class="kw">move</span>()</span>
+<span id="cb26-24"><a href="harvest.html#cb26-24" aria-hidden="true"></a>          </span>
+<span id="cb26-25"><a href="harvest.html#cb26-25" aria-hidden="true"></a><span class="co"># harvest_one_row()</span></span>
+<span id="cb26-26"><a href="harvest.html#cb26-26" aria-hidden="true"></a></span>
+<span id="cb26-27"><a href="harvest.html#cb26-27" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
+<span id="cb26-28"><a href="harvest.html#cb26-28" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
+<span id="cb26-29"><a href="harvest.html#cb26-29" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb26-30"><a href="harvest.html#cb26-30" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb26-31"><a href="harvest.html#cb26-31" aria-hidden="true"></a></span>
+<span id="cb26-32"><a href="harvest.html#cb26-32" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
+<span id="cb26-33"><a href="harvest.html#cb26-33" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
+<span id="cb26-34"><a href="harvest.html#cb26-34" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">7</span><span class="op">:</span></span>
+<span id="cb26-35"><a href="harvest.html#cb26-35" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb26-36"><a href="harvest.html#cb26-36" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb26-37"><a href="harvest.html#cb26-37" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb26-38"><a href="harvest.html#cb26-38" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb26-39"><a href="harvest.html#cb26-39" aria-hidden="true"></a>    </span>
+<span id="cb26-40"><a href="harvest.html#cb26-40" aria-hidden="true"></a><span class="co"># move_to_next_row()</span></span>
+<span id="cb26-41"><a href="harvest.html#cb26-41" aria-hidden="true"></a></span>
+<span id="cb26-42"><a href="harvest.html#cb26-42" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
+<span id="cb26-43"><a href="harvest.html#cb26-43" aria-hidden="true"></a></span>
+<span id="cb26-44"><a href="harvest.html#cb26-44" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb26-45"><a href="harvest.html#cb26-45" aria-hidden="true"></a><span class="st">    </span><span class="kw">harvest_one_row</span>()</span>
+<span id="cb26-46"><a href="harvest.html#cb26-46" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="harvest-02" class="section level2" number="4.2">
+<div id="harvest-02" class="section level2" number="9.2">
 <h2>
-<span class="header-section-number">4.2</span> 추수 2<a class="anchor" aria-label="anchor" href="#harvest-02"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2</span> 추수 2<a class="anchor" aria-label="anchor" href="#harvest-02"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Harvest%202&amp;url=worlds%2Ftutorial_en%2Fharvest2.json">문제 바로가기</a></li>
@@ -162,63 +162,63 @@
 </li>
 </ul>
 <div class="row">
-<div id="실행결과-11" class="section level3 col-md-6" number="4.2.1">
+<div id="실행결과-26" class="section level3 col-md-6" number="9.2.1">
 <h3>
-<span class="header-section-number">4.2.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-11"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-26"><i class="fas fa-link"></i></a>
 </h3>
 <div class="inline-figure"><img src="fig/Harvest_02.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-11" class="section level3 col-md-6" number="4.2.2">
+<div id="코드-26" class="section level3 col-md-6" number="9.2.2">
 <h3>
-<span class="header-section-number">4.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-11"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-26"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="harvest.html#cb12-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
-<span id="cb12-2"><a href="harvest.html#cb12-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb12-3"><a href="harvest.html#cb12-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb12-4"><a href="harvest.html#cb12-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb12-5"><a href="harvest.html#cb12-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb12-6"><a href="harvest.html#cb12-6" aria-hidden="true"></a>    </span>
-<span id="cb12-7"><a href="harvest.html#cb12-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
-<span id="cb12-8"><a href="harvest.html#cb12-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
-<span id="cb12-9"><a href="harvest.html#cb12-9" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb12-10"><a href="harvest.html#cb12-10" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb12-11"><a href="harvest.html#cb12-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb12-12"><a href="harvest.html#cb12-12" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb12-13"><a href="harvest.html#cb12-13" aria-hidden="true"></a>  </span>
-<span id="cb12-14"><a href="harvest.html#cb12-14" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
-<span id="cb12-15"><a href="harvest.html#cb12-15" aria-hidden="true"></a></span>
-<span id="cb12-16"><a href="harvest.html#cb12-16" aria-hidden="true"></a><span class="co"># 한줄 추수 ----</span></span>
-<span id="cb12-17"><a href="harvest.html#cb12-17" aria-hidden="true"></a>def <span class="kw">harvest_one_row</span>()<span class="op">:</span></span>
-<span id="cb12-18"><a href="harvest.html#cb12-18" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb12-19"><a href="harvest.html#cb12-19" aria-hidden="true"></a><span class="st">        </span><span class="cf">if</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb12-20"><a href="harvest.html#cb12-20" aria-hidden="true"></a><span class="st">            </span><span class="kw">move</span>()</span>
-<span id="cb12-21"><a href="harvest.html#cb12-21" aria-hidden="true"></a>        <span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb12-22"><a href="harvest.html#cb12-22" aria-hidden="true"></a><span class="st">            </span><span class="kw">take</span>()</span>
-<span id="cb12-23"><a href="harvest.html#cb12-23" aria-hidden="true"></a></span>
-<span id="cb12-24"><a href="harvest.html#cb12-24" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
-<span id="cb12-25"><a href="harvest.html#cb12-25" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
-<span id="cb12-26"><a href="harvest.html#cb12-26" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb12-27"><a href="harvest.html#cb12-27" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb12-28"><a href="harvest.html#cb12-28" aria-hidden="true"></a></span>
-<span id="cb12-29"><a href="harvest.html#cb12-29" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
-<span id="cb12-30"><a href="harvest.html#cb12-30" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
-<span id="cb12-31"><a href="harvest.html#cb12-31" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb12-32"><a href="harvest.html#cb12-32" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb12-33"><a href="harvest.html#cb12-33" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb12-34"><a href="harvest.html#cb12-34" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb12-35"><a href="harvest.html#cb12-35" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb12-36"><a href="harvest.html#cb12-36" aria-hidden="true"></a></span>
-<span id="cb12-37"><a href="harvest.html#cb12-37" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
-<span id="cb12-38"><a href="harvest.html#cb12-38" aria-hidden="true"></a></span>
-<span id="cb12-39"><a href="harvest.html#cb12-39" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb12-40"><a href="harvest.html#cb12-40" aria-hidden="true"></a><span class="st">    </span><span class="kw">harvest_one_row</span>()</span>
-<span id="cb12-41"><a href="harvest.html#cb12-41" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="harvest.html#cb27-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
+<span id="cb27-2"><a href="harvest.html#cb27-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
+<span id="cb27-3"><a href="harvest.html#cb27-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb27-4"><a href="harvest.html#cb27-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb27-5"><a href="harvest.html#cb27-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb27-6"><a href="harvest.html#cb27-6" aria-hidden="true"></a>    </span>
+<span id="cb27-7"><a href="harvest.html#cb27-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
+<span id="cb27-8"><a href="harvest.html#cb27-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
+<span id="cb27-9"><a href="harvest.html#cb27-9" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb27-10"><a href="harvest.html#cb27-10" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb27-11"><a href="harvest.html#cb27-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb27-12"><a href="harvest.html#cb27-12" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb27-13"><a href="harvest.html#cb27-13" aria-hidden="true"></a>  </span>
+<span id="cb27-14"><a href="harvest.html#cb27-14" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
+<span id="cb27-15"><a href="harvest.html#cb27-15" aria-hidden="true"></a></span>
+<span id="cb27-16"><a href="harvest.html#cb27-16" aria-hidden="true"></a><span class="co"># 한줄 추수 ----</span></span>
+<span id="cb27-17"><a href="harvest.html#cb27-17" aria-hidden="true"></a>def <span class="kw">harvest_one_row</span>()<span class="op">:</span></span>
+<span id="cb27-18"><a href="harvest.html#cb27-18" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb27-19"><a href="harvest.html#cb27-19" aria-hidden="true"></a><span class="st">        </span><span class="cf">if</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb27-20"><a href="harvest.html#cb27-20" aria-hidden="true"></a><span class="st">            </span><span class="kw">move</span>()</span>
+<span id="cb27-21"><a href="harvest.html#cb27-21" aria-hidden="true"></a>        <span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb27-22"><a href="harvest.html#cb27-22" aria-hidden="true"></a><span class="st">            </span><span class="kw">take</span>()</span>
+<span id="cb27-23"><a href="harvest.html#cb27-23" aria-hidden="true"></a></span>
+<span id="cb27-24"><a href="harvest.html#cb27-24" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
+<span id="cb27-25"><a href="harvest.html#cb27-25" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
+<span id="cb27-26"><a href="harvest.html#cb27-26" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb27-27"><a href="harvest.html#cb27-27" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb27-28"><a href="harvest.html#cb27-28" aria-hidden="true"></a></span>
+<span id="cb27-29"><a href="harvest.html#cb27-29" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
+<span id="cb27-30"><a href="harvest.html#cb27-30" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
+<span id="cb27-31"><a href="harvest.html#cb27-31" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb27-32"><a href="harvest.html#cb27-32" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb27-33"><a href="harvest.html#cb27-33" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb27-34"><a href="harvest.html#cb27-34" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb27-35"><a href="harvest.html#cb27-35" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb27-36"><a href="harvest.html#cb27-36" aria-hidden="true"></a></span>
+<span id="cb27-37"><a href="harvest.html#cb27-37" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
+<span id="cb27-38"><a href="harvest.html#cb27-38" aria-hidden="true"></a></span>
+<span id="cb27-39"><a href="harvest.html#cb27-39" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb27-40"><a href="harvest.html#cb27-40" aria-hidden="true"></a><span class="st">    </span><span class="kw">harvest_one_row</span>()</span>
+<span id="cb27-41"><a href="harvest.html#cb27-41" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="harvest-03" class="section level2" number="4.3">
+<div id="harvest-03" class="section level2" number="9.3">
 <h2>
-<span class="header-section-number">4.3</span> 추수 3<a class="anchor" aria-label="anchor" href="#harvest-03"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.3</span> 추수 3<a class="anchor" aria-label="anchor" href="#harvest-03"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Harvest%203&amp;url=worlds%2Ftutorial_en%2Fharvest3.json">문제 바로가기</a></li>
@@ -237,90 +237,90 @@
 </li>
 </ul>
 <div class="row">
-<div id="실행결과-12" class="section level3 col-md-6" number="4.3.1">
+<div id="실행결과-27" class="section level3 col-md-6" number="9.3.1">
 <h3>
-<span class="header-section-number">4.3.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-12"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.3.1</span> 실행결과<a class="anchor" aria-label="anchor" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-27"><i class="fas fa-link"></i></a>
 </h3>
 <div class="inline-figure"><img src="fig/Harvest_03.gif" width="70%" style="display: block; margin: auto;"></div>
 </div>
-<div id="코드-12" class="section level3 col-md-6" number="4.3.2">
+<div id="코드-27" class="section level3 col-md-6" number="9.3.2">
 <h3>
-<span class="header-section-number">4.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-12"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.3.2</span> 코드<a class="anchor" aria-label="anchor" href="#%EC%BD%94%EB%93%9C-27"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="harvest.html#cb13-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
-<span id="cb13-2"><a href="harvest.html#cb13-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
-<span id="cb13-3"><a href="harvest.html#cb13-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb13-4"><a href="harvest.html#cb13-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb13-5"><a href="harvest.html#cb13-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb13-6"><a href="harvest.html#cb13-6" aria-hidden="true"></a>    </span>
-<span id="cb13-7"><a href="harvest.html#cb13-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
-<span id="cb13-8"><a href="harvest.html#cb13-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
-<span id="cb13-9"><a href="harvest.html#cb13-9" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb13-10"><a href="harvest.html#cb13-10" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb13-11"><a href="harvest.html#cb13-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb13-12"><a href="harvest.html#cb13-12" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb13-13"><a href="harvest.html#cb13-13" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb13-14"><a href="harvest.html#cb13-14" aria-hidden="true"></a>  </span>
-<span id="cb13-15"><a href="harvest.html#cb13-15" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
-<span id="cb13-16"><a href="harvest.html#cb13-16" aria-hidden="true"></a></span>
-<span id="cb13-17"><a href="harvest.html#cb13-17" aria-hidden="true"></a><span class="co"># 당근 심기 ----</span></span>
-<span id="cb13-18"><a href="harvest.html#cb13-18" aria-hidden="true"></a>def <span class="kw">fix_one_row</span>()<span class="op">:</span></span>
-<span id="cb13-19"><a href="harvest.html#cb13-19" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb13-20"><a href="harvest.html#cb13-20" aria-hidden="true"></a><span class="st">        </span><span class="cf">while</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb13-21"><a href="harvest.html#cb13-21" aria-hidden="true"></a><span class="st">            </span><span class="kw">put</span>()</span>
-<span id="cb13-22"><a href="harvest.html#cb13-22" aria-hidden="true"></a>        <span class="co"># 당근 1개 이상인 경우 다 뽑아내고 1개 심는다.            </span></span>
-<span id="cb13-23"><a href="harvest.html#cb13-23" aria-hidden="true"></a>        <span class="cf">if</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb13-24"><a href="harvest.html#cb13-24" aria-hidden="true"></a><span class="st">            </span><span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
-<span id="cb13-25"><a href="harvest.html#cb13-25" aria-hidden="true"></a><span class="st">                </span><span class="kw">take</span>()</span>
-<span id="cb13-26"><a href="harvest.html#cb13-26" aria-hidden="true"></a>            <span class="kw">put</span>()</span>
-<span id="cb13-27"><a href="harvest.html#cb13-27" aria-hidden="true"></a>            <span class="kw">move</span>()</span>
-<span id="cb13-28"><a href="harvest.html#cb13-28" aria-hidden="true"></a></span>
-<span id="cb13-29"><a href="harvest.html#cb13-29" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
-<span id="cb13-30"><a href="harvest.html#cb13-30" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
-<span id="cb13-31"><a href="harvest.html#cb13-31" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
-<span id="cb13-32"><a href="harvest.html#cb13-32" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
-<span id="cb13-33"><a href="harvest.html#cb13-33" aria-hidden="true"></a></span>
-<span id="cb13-34"><a href="harvest.html#cb13-34" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
-<span id="cb13-35"><a href="harvest.html#cb13-35" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
-<span id="cb13-36"><a href="harvest.html#cb13-36" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb13-37"><a href="harvest.html#cb13-37" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
-<span id="cb13-38"><a href="harvest.html#cb13-38" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb13-39"><a href="harvest.html#cb13-39" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
-<span id="cb13-40"><a href="harvest.html#cb13-40" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
-<span id="cb13-41"><a href="harvest.html#cb13-41" aria-hidden="true"></a></span>
-<span id="cb13-42"><a href="harvest.html#cb13-42" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
-<span id="cb13-43"><a href="harvest.html#cb13-43" aria-hidden="true"></a></span>
-<span id="cb13-44"><a href="harvest.html#cb13-44" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
-<span id="cb13-45"><a href="harvest.html#cb13-45" aria-hidden="true"></a><span class="st">    </span><span class="kw">fix_one_row</span>()</span>
-<span id="cb13-46"><a href="harvest.html#cb13-46" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="harvest.html#cb28-1" aria-hidden="true"></a><span class="co"># 추수 위치로 이동 ----</span></span>
+<span id="cb28-2"><a href="harvest.html#cb28-2" aria-hidden="true"></a>def <span class="kw">turn_right</span>()<span class="op">:</span></span>
+<span id="cb28-3"><a href="harvest.html#cb28-3" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb28-4"><a href="harvest.html#cb28-4" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb28-5"><a href="harvest.html#cb28-5" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb28-6"><a href="harvest.html#cb28-6" aria-hidden="true"></a>    </span>
+<span id="cb28-7"><a href="harvest.html#cb28-7" aria-hidden="true"></a>def <span class="kw">ready_harvest</span>()<span class="op">:</span></span>
+<span id="cb28-8"><a href="harvest.html#cb28-8" aria-hidden="true"></a><span class="st">    </span><span class="kw">move</span>()</span>
+<span id="cb28-9"><a href="harvest.html#cb28-9" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb28-10"><a href="harvest.html#cb28-10" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb28-11"><a href="harvest.html#cb28-11" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb28-12"><a href="harvest.html#cb28-12" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb28-13"><a href="harvest.html#cb28-13" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb28-14"><a href="harvest.html#cb28-14" aria-hidden="true"></a>  </span>
+<span id="cb28-15"><a href="harvest.html#cb28-15" aria-hidden="true"></a><span class="kw">ready_harvest</span>()</span>
+<span id="cb28-16"><a href="harvest.html#cb28-16" aria-hidden="true"></a></span>
+<span id="cb28-17"><a href="harvest.html#cb28-17" aria-hidden="true"></a><span class="co"># 당근 심기 ----</span></span>
+<span id="cb28-18"><a href="harvest.html#cb28-18" aria-hidden="true"></a>def <span class="kw">fix_one_row</span>()<span class="op">:</span></span>
+<span id="cb28-19"><a href="harvest.html#cb28-19" aria-hidden="true"></a><span class="st">    </span><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb28-20"><a href="harvest.html#cb28-20" aria-hidden="true"></a><span class="st">        </span><span class="cf">while</span> not <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb28-21"><a href="harvest.html#cb28-21" aria-hidden="true"></a><span class="st">            </span><span class="kw">put</span>()</span>
+<span id="cb28-22"><a href="harvest.html#cb28-22" aria-hidden="true"></a>        <span class="co"># 당근 1개 이상인 경우 다 뽑아내고 1개 심는다.            </span></span>
+<span id="cb28-23"><a href="harvest.html#cb28-23" aria-hidden="true"></a>        <span class="cf">if</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb28-24"><a href="harvest.html#cb28-24" aria-hidden="true"></a><span class="st">            </span><span class="cf">while</span> <span class="kw">object_here</span>()<span class="op">:</span></span>
+<span id="cb28-25"><a href="harvest.html#cb28-25" aria-hidden="true"></a><span class="st">                </span><span class="kw">take</span>()</span>
+<span id="cb28-26"><a href="harvest.html#cb28-26" aria-hidden="true"></a>            <span class="kw">put</span>()</span>
+<span id="cb28-27"><a href="harvest.html#cb28-27" aria-hidden="true"></a>            <span class="kw">move</span>()</span>
+<span id="cb28-28"><a href="harvest.html#cb28-28" aria-hidden="true"></a></span>
+<span id="cb28-29"><a href="harvest.html#cb28-29" aria-hidden="true"></a><span class="co"># 다음 추수 위치로 이동</span></span>
+<span id="cb28-30"><a href="harvest.html#cb28-30" aria-hidden="true"></a>def <span class="kw">turn_around</span>()<span class="op">:</span></span>
+<span id="cb28-31"><a href="harvest.html#cb28-31" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_left</span>()</span>
+<span id="cb28-32"><a href="harvest.html#cb28-32" aria-hidden="true"></a>    <span class="kw">turn_left</span>()</span>
+<span id="cb28-33"><a href="harvest.html#cb28-33" aria-hidden="true"></a></span>
+<span id="cb28-34"><a href="harvest.html#cb28-34" aria-hidden="true"></a>def <span class="kw">move_to_next_row</span>()<span class="op">:</span><span class="st">    </span></span>
+<span id="cb28-35"><a href="harvest.html#cb28-35" aria-hidden="true"></a><span class="st">    </span><span class="kw">turn_around</span>()</span>
+<span id="cb28-36"><a href="harvest.html#cb28-36" aria-hidden="true"></a>    <span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb28-37"><a href="harvest.html#cb28-37" aria-hidden="true"></a><span class="st">        </span><span class="kw">move</span>()</span>
+<span id="cb28-38"><a href="harvest.html#cb28-38" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb28-39"><a href="harvest.html#cb28-39" aria-hidden="true"></a>    <span class="kw">move</span>()</span>
+<span id="cb28-40"><a href="harvest.html#cb28-40" aria-hidden="true"></a>    <span class="kw">turn_right</span>()</span>
+<span id="cb28-41"><a href="harvest.html#cb28-41" aria-hidden="true"></a></span>
+<span id="cb28-42"><a href="harvest.html#cb28-42" aria-hidden="true"></a><span class="co"># 전체 6줄 추수</span></span>
+<span id="cb28-43"><a href="harvest.html#cb28-43" aria-hidden="true"></a></span>
+<span id="cb28-44"><a href="harvest.html#cb28-44" aria-hidden="true"></a><span class="cf">repeat</span> <span class="dv">6</span><span class="op">:</span></span>
+<span id="cb28-45"><a href="harvest.html#cb28-45" aria-hidden="true"></a><span class="st">    </span><span class="kw">fix_one_row</span>()</span>
+<span id="cb28-46"><a href="harvest.html#cb28-46" aria-hidden="true"></a>    <span class="kw">move_to_next_row</span>()</span></code></pre></div>
 </div>
 </div>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="center.html"><span class="header-section-number">3</span> 중심 (center)</a></div>
-<div class="next"><a href="hurdle.html"><span class="header-section-number">5</span> 장애물 넘기</a></div>
+<div class="prev"><a href="center.html"><span class="header-section-number">8</span> 중심 (center)</a></div>
+<div class="next"><a href="storm.html"><span class="header-section-number">10</span> 폭풍 후에 …</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#harvest"><span class="header-section-number">4</span> 추수 (Harvest)</a></li>
+<li><a class="nav-link" href="#harvest"><span class="header-section-number">9</span> 추수 (Harvest)</a></li>
 <li>
-<a class="nav-link" href="#harvest-01"><span class="header-section-number">4.1</span> 추수 1</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-10"><span class="header-section-number">4.1.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-10"><span class="header-section-number">4.1.2</span> 코드</a></li>
+<a class="nav-link" href="#harvest-01"><span class="header-section-number">9.1</span> 추수 1</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-25"><span class="header-section-number">9.1.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-25"><span class="header-section-number">9.1.2</span> 코드</a></li>
 </ul>
 </li>
 <li>
-<a class="nav-link" href="#harvest-02"><span class="header-section-number">4.2</span> 추수 2</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-11"><span class="header-section-number">4.2.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-11"><span class="header-section-number">4.2.2</span> 코드</a></li>
+<a class="nav-link" href="#harvest-02"><span class="header-section-number">9.2</span> 추수 2</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-26"><span class="header-section-number">9.2.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-26"><span class="header-section-number">9.2.2</span> 코드</a></li>
 </ul>
 </li>
 <li>
-<a class="nav-link" href="#harvest-03"><span class="header-section-number">4.3</span> 추수 3</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-12"><span class="header-section-number">4.3.1</span> 실행결과</a></li>
-<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-12"><span class="header-section-number">4.3.2</span> 코드</a></li>
+<a class="nav-link" href="#harvest-03"><span class="header-section-number">9.3</span> 추수 3</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC-27"><span class="header-section-number">9.3.1</span> 실행결과</a></li>
+<li><a class="nav-link" href="#%EC%BD%94%EB%93%9C-27"><span class="header-section-number">9.3.2</span> 코드</a></li>
 </ul>
 </li>
 </ul>
