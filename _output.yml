@@ -13,4 +13,6 @@ bookdown::gitbook:
 bookdown::bs4_book:
   theme:
     primary: "#637238"
+  includes:
+    in_header: google_analytics.html
 
