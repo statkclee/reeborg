@@ -3,7 +3,10 @@ title: "리보그 세상(Reeborg's World)"
 author: "ANDRÉ ROBERGE, 이광춘 (번역)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:
+    includes:
+      in_header: google_analytics.html
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
