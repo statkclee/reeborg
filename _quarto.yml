@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: docs
+
+lang: kr
+
+book:
+  title: "리보그 세상"
+  subtitle: "블록 프로그래밍 언어에서 R/파이썬으로 가는 중간 언어"
+  author: "한국 R 사용자회"
+  date: last-modified
+  date-format: "YYYY년 MM월 DD일"
+  chapters:
+    - index.qmd
+    - part: "직선 1차원"
+      chapters:
+        - 01-home.qmd
+        - 02-around.qmd
+        - 03-newspaper.qmd
+        - 04-hurdle.qmd
+        - 05-token.qmd
+    - part: "평면 2차원"
+      chapters:
+        - 06-rain.qmd
+        - 07-maze.qmd
+        - 08-center.qmd
+        - 09-harvest.qmd
+        - 10-storm.qmd
+  sidebar:
+    pinned: true
+
+  repo-url: https://github.com/statkclee/reeborg
+  search:
+    location: sidebar
+    type: textbox
+  downloads: []
+
+link-citations: yes
+mainfont: "NanumBarunPen"
+sansfont: "NanumGothic"
+monofont: "D2Coding"
+
+format:
+  html:
+    theme: cosmo
+    cover-image: fig/reeborg_logo.jpg
+  pdf:
+    documentclass: scrreprt
+    papersize: b5paper
+    geometry: margin=2cm
+    header-includes:
+      - \usepackage{lastpage}
+      - \usepackage{fancyhdr}
+      - \definecolor{col1}{RGB}{5, 53, 255}
+      - \fancypagestyle{ttlpage}{\fancyfoot[C]{{\thepage} of \pageref{LastPage}}}
+      - \thispagestyle{ttlpage}
+      - \pagestyle{fancy}
+      - \fancyhead[EL,OL]{\rightmark}
+      - \fancyhead[EC,OC]{}
+      - \fancyhead[ER,OR]{빛에듀(Bit-Edu)}
+      - \fancyfoot[EL,OL]{\color{col1}{한국R사용자회}}
+      - \fancyfoot[EC,OC]{\textbf{리보그 세상(Reeborg's World)}}
+      - \fancyfoot[ER,OR] {총 \pageref{LastPage} 중 {\thepage}}
+

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="한국 R 사용자회">
 
-<title>리보그 세상</title>
+<title>리보그 세상 - 7&nbsp; 미로 탈출</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -30,7 +92,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-home.html" rel="next">
+<link href="./08-center.html" rel="next">
+<link href="./06-rain.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">리보그 세상</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">미로 탈출</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -97,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">리보그 세상</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">리보그 세상</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -150,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-maze.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">미로 탈출</span></a>
+  <a href="./07-maze.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">미로 탈출</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -175,46 +238,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">목차</h2>
-   
-  <ul>
-  <li><a href="#reeborg" id="toc-reeborg" class="nav-link active" data-scroll-target="#reeborg">리보그 세상</a>
-  <ul class="collapse">
-  <li><a href="#rur-ple" id="toc-rur-ple" class="nav-link" data-scroll-target="#rur-ple">러플</a></li>
-  <li><a href="#code-persepctive" id="toc-code-persepctive" class="nav-link" data-scroll-target="#code-persepctive">프로그래밍과 문제해결</a></li>
-  <li><a href="#reeborg-programming" id="toc-reeborg-programming" class="nav-link" data-scroll-target="#reeborg-programming">리보그 기본 코딩방법</a></li>
-  <li><a href="#useful-website" id="toc-useful-website" class="nav-link" data-scroll-target="#useful-website">유용한 코딩 웹사이트</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">리보그 세상</h1>
-<p class="subtitle lead">블록 프로그래밍 언어에서 R/파이썬으로 가는 중간 언어</p>
+<h1 class="title"><span id="maze" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">미로 탈출</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">저자</div>
-    <div class="quarto-title-meta-contents">
-             <p>한국 R 사용자회 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">공개</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2022년 11월 10일</p>
-    </div>
-  </div>
   
     
   </div>
@@ -222,44 +260,56 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-<section id="reeborg" class="level1 unnumbered">
-<p><img src="fig/reeborg_logo.jpg" title="리보그 세상" class="quarto-cover-image img-fluid"></p><h1 class="unnumbered">리보그 세상</h1>
-<p><strong>리보그 세상(Reeborg’s World)</strong>는 <a href="https://statkclee.github.io/unplugged/">컴퓨터 과학 언플러그드</a>를 통해 전혀 컴퓨터가 없는 상태에서 주요 개념을 빠른 시간내에 잡을 수 있고, 이후 블록 프로그래밍(Block Programming)으로 MIT에서 개발한 <a href="https://scratch.mit.edu/">스크래치(Scratch)</a>와 <a href="https://tidyblocks.tech/">타이디블록(Tidyblocks)</a>를 통해 비쥬얼 프로그래밍을 즐길 수 있다. 그 다음 단계로 소프트웨어 프로그래밍 언어인 파이썬, 데이터 프로그래밍 언어인 R 로 바로 넘어가는 것이 아니라 <code>move()</code>, <code>turn_left()</code> 두개의 동사를 활용한 <a href="https://reeborg.ca/">리보그 세상(Reeborg’s World)</a>로 기초를 탄탄히 다져놓아야 한다. <a href="https://reeborg.ca/docs/ko/">리보그 세상 도움말</a>도 본격적인 프로그래밍으로 넘어가는데 도움이 될 것이다. 리보그는 저자가 해답(Solution)을 특별히 제시하고 있지는 않고 힌트를 제시하는 수준으로 인터넷에 정보가 공유되고 있으니 각자 리보그 과제를 함께 고민하면서 생각근육을 많이 키워나갔으면 합니다.</p>
-<p><img src="fig/reeborg-project.png" class="img-fluid" width="639"></p>
-<section id="rur-ple" class="level2">
-<h2 class="anchored" data-anchor-id="rur-ple">러플</h2>
-<p><a href="https://reeborg.ca/">리보그 세상(Reeborg’s World)</a>은 <a href="https://statkclee.github.io/rur-ple/">러플(RUR-PLE)</a>으로 André Roberge 박사가 2004년부터 2010년까지 PC 설치형 버젼 코딩 교육을 제작한 것으로 인기를 얻었고 한글 버젼도 <a href="https://statkclee.github.io/rur-ple/">러플(RUR-PLE)</a> 웹사이트에서 확인 가능하다.</p>
-</section>
-<section id="code-persepctive" class="level2">
-<h2 class="anchored" data-anchor-id="code-persepctive">프로그래밍과 문제해결</h2>
-<p>미국 항공우주국(NASA) JPL(제트 추진 연구소) 연구원 안드레 카스타노가 미국 남가주 방과후 교육에 수년에 걸쳐 가다듬은 소프트웨어 및 문제해결 교육 과정을 제작하여 인터넷에 공개하였는 <a href="https://reeborg.ca/">리보그 세상(Reeborg’s World)</a> 초기 버젼을 기반으로 제작하였다. <a href="https://statkclee.github.io/code-perspectives/">프로그래밍과 문제해결</a> 웹사이트를 참고한다.</p>
-</section>
-<section id="reeborg-programming" class="level2">
-<h2 class="anchored" data-anchor-id="reeborg-programming">리보그 기본 코딩방법</h2>
-<p><a href="https://scratch.mit.edu/">스크래치(Scratch)</a>와 <a href="https://tidyblocks.tech/">타이디블록(Tidyblocks)</a> 같은 블록 프로그래밍 언어가 WIMP를 활용한 클릭(click), 드래그(drag), 드랍(drop) 방식이라면 리보그는 별도 키보드가 있어 이를 활용하여 키보드와 편집기를 이용한 본격적인 프로그래밍 이전에 유용하게 활용할 수 있다.</p>
-<p><img src="fig/reeborg_howto.gif" class="img-fluid" width="657"></p>
-</section>
-<section id="useful-website" class="level2">
-<h2 class="anchored" data-anchor-id="useful-website">유용한 코딩 웹사이트</h2>
 <ul>
-<li><p><a href="https://statkclee.github.io/unplugged/">컴퓨터 과학 언플러그드</a></p></li>
-<li><p><a href="https://tidyblocks.tech/">TidyBlocks</a></p></li>
-<li><p><a href="https://reeborg.ca/docs/ko/">리보그 세상 도움말</a></p></li>
-<li><p><a href="https://statkclee.github.io/pythonlearn-kr/">모두를 위한 파이썬</a></p></li>
-<li><p><a href="http://statkclee.github.io/swcarpentry-version-5-3-new/">소프트웨어 카펜트리</a></p></li>
-<li><p><a href="http://statkclee.github.io/data-science/">데이터 과학</a></p></li>
-<li><p><strong>글쓰기 저작</strong></p>
+<li><a href="https://reeborg.ca/reeborg.html?lang=ko-en&amp;mode=python&amp;menu=worlds%2Fmenus%2Freeborg_intro_en.json&amp;name=Maze&amp;url=worlds%2Ftutorial_en%2Fmaze1.json">문제 바로가기</a></li>
+<li>선행 지식
 <ul>
-<li><a href="https://statkclee.github.io/comp_document/">컴퓨터 문서저작</a></li>
-<li><a href="https://statkclee.github.io/ds-authoring/">데이터 과학 기고문과 발표자료 사례</a></li>
+<li>기본 함수 : <code>move()</code>, <code>turn_left()</code></li>
+<li>테스트 조건: <code>front_is_clear()</code>, <code>wall_in_front()</code>, <code>right_is_clear()</code>, <code>wall_on_right()</code>, <code>at_goal()</code></li>
+<li>반복 <code>while</code> 루프, <code>if</code>/<code>elif</code>/<code>else</code> 조건 문</li>
 </ul></li>
-<li><p><a href="https://use-r.kr/">한국 R 컨퍼런스</a></p></li>
+<li>난이도: 4</li>
 </ul>
+<div class="row">
+<section id="실행결과" class="level3 col-md-6" data-number="7.0.1">
+<h3 data-number="7.0.1" class="anchored" data-anchor-id="실행결과"><span class="header-section-number">7.0.1</span> 실행결과</h3>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (knitr<span class="sc">:::</span><span class="fu">is_latex_output</span>()) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">asis_output</span>(<span class="st">'</span><span class="sc">\\</span><span class="st">url{....}'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"fig/Maze.gif"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig/Maze.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="코드" class="level3 col-md-6" data-number="7.0.2">
+<h3 data-number="7.0.2" class="anchored" data-anchor-id="코드"><span class="header-section-number">7.0.2</span> 코드</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> turn_right():</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    turn_left()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    turn_left()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    turn_left()</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="kw">not</span> at_goal():</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> right_is_clear():</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        turn_right()</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        move()</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> front_is_clear():</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        move()</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        turn_left()    </span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -397,10 +447,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./06-rain.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">비바람 창문 닫기</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-home.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">집 (Home)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08-center.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">중심 (center)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
